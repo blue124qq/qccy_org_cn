@@ -1,0 +1,33 @@
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'FontAwesome';  /* essential for enabling glyphicon */
+    content: "\f139";    /* adjust as needed, taken from bootstrap.css */
+    float: right;       /* adjust as needed */
+    color: #0093d0;         /* adjust as needed */
+    font-size: 1.60em;
+    font-weight: 900;  
+    top:-5px;
+    position: relative;
+    
+   
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f13a";    /* adjust as needed, taken from bootstrap.css */
+}
+
+@media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+@media (max-width: @screen-xs) {
+    h4{font-size: 1.00em;}
+}
+
+@media (max-width: @screen-sm) {
+    h4{font-size: 1.00em;}
+}
+
+table tr:first-child td {
+ font-weight:normal;
+}

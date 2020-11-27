@@ -1,0 +1,3420 @@
+/* *** 
+    Last Change to file 21/08/19
+    Backup to FrontendToolkits/enterprise-ireland solution
+*/
+
+
+/* COVID19 */
+body form[action^="/en/about-us/services/covid-19/"] #page-pre-detail,
+body form[action^="/en/About-Us/Services/Covid-19/"] #page-pre-detail {
+    background-position: right top;
+}
+
+/*IMW2020*/
+body form[action^="/en/events/ourevents/international-markets-week-2020.html"] #page-pre-detail,
+body form[action^="/en/Events/Ourevents/International-Markets-Week-2020.html"] #page-pre-detail {
+    background-image: url("https://www.enterprise-ireland.com/en/Events/IMW2020Banner.jpg") !important; 
+    background-color: #2256a2 !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+/*IMW2020*/
+body form[action^="/en/events/ourevents/international-markets-week-2020.html"] #page-pre-detail a,
+body form[action^="/en/Events/Ourevents/International-Markets-Week-2020.html"] #page-pre-detail a {
+display:none; 
+}
+
+
+/*IMW2020*/
+body form[action^="/en/events/ourevents/international-markets-week-2020.html"] #page-pre-detail ol.breadcrumb {
+    display: none;
+}
+
+
+
+
+body form[action^="/en/events/ourevents/international-markets-week-2020.html"] .page-pre-wrap,
+body form[action^="/en/Events/Ourevents/International-Markets-Week-2020.html"] .page-pre-wrap {
+    background-color: transparent !important;
+
+}
+
+  
+body form[action^="/en/about-us/services/covid-19/"] .page-pre-wrap,
+body form[action^="/en/About-Us/Services/Covid-19/"] .page-pre-wrap {
+    background-color: rgba(0, 0, 0, 0.27);
+}
+ form[action^="/en/about-us/services/covid-19/"] .breadcrumb li:nth-child(2), form[action^="/en/about-us/services/covid-19/"] .breadcrumb li:nth-child(3), form[action^="/en/About-Us/Services/Covid-19/"] .breadcrumb li:nth-child(2), form[action^="/en/About-Us/Services/Covid-19/"] .breadcrumb li:nth-child(3) {
+    display: none;
+}
+form[action^="/en/about-us/services/covid-19/"] #landing-sublocations,
+form[action^="/en/about-us/services/covid-19/"] #LandingMenu2Holder,
+form[action^="/en/About-Us/Services/Covid-19/"] #landing-sublocations,
+form[action^="/en/About-Us/Services/Covid-19/"] #LandingMenu2Holder {
+    padding-top: 0 !important;
+}
+    form[action^="/en/about-us/services/covid-19/"] #landing-sublocations .landing-template:first-of-type,
+    form[action^="/en/About-Us/Services/Covid-19/"] #landing-sublocations .landing-template:first-of-type {
+        height: auto !important;
+        min-height: 250px !important;
+}
+
+.covid19 .resp-tab-content p {
+    padding: 10px 15px;
+}
+.covid19 .resp-tab-content ul, .covid19 .resp-tab-content ol {
+    padding: 0 0 0 45px;
+}
+
+
+.covid19.subNav ul {
+    background-color: #f6f6f6;
+    padding: 10px 0 0;
+    box-shadow: none;
+    align-items: flex-start;
+    justify-content: stretch;
+}
+
+    .covid19.subNav ul li {
+        padding-left: 0px;
+    }
+
+    .covid19.subNav ul a {
+        text-transform: uppercase;
+        color: #666;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+.covid19.subNav a.active {
+    color: #666;
+    cursor: default;
+    border-bottom: 5px solid #ff801b;
+    position: relative;
+    bottom: 1px;
+}
+
+.covid19.subNav a:hover {
+    background-color: #ff801b;
+    color: #fff;
+}
+
+#parentHorizontalTab .resp-tab-item.resp-tab-active {
+    background: #fff !important;
+}
+
+#parentHorizontalTab .resp-tab-item {
+    background: #e6e6e6 !important;
+}
+
+/* Covid19 Nav */
+
+.covid19-nav a {
+    color: #fff;
+    text-align: center;
+}
+
+#landing-sublocations ul.covid19-nav a:hover, 
+#landing-sublocations ul.covid19-nav a.active {
+    color: #fade00;
+}
+
+#landing-sublocations ul.covid19-nav a:hover span,
+#landing-sublocations ul.covid19-nav a.active span {
+    color: #fade00;
+    border: 3px solid #fade00;
+}
+
+.covid19-nav span {
+    font-size: 2em;
+    padding-top: 17px;
+    display: block;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    margin: 0 auto;
+}
+
+
+/*! PocketGrid 1.1.0 Copyright 2013 Arnaud Leray MIT License */
+.block-group, .block, .block-group:after, .block:after, .block-group:before, .block:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.block-group {
+    *zoom: 1
+}
+
+    .block-group:before, .block-group:after {
+        display: table;
+        content: "";
+        line-height: 0
+    }
+
+    .block-group:after {
+        clear: both
+    }
+
+.block-group {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+    .block-group > .block-group {
+        clear: none;
+        float: left;
+        margin: 0 !important
+    }
+
+.block {
+    float: left;
+    width: 100%
+}
+/* MOBILE FIRST */
+/* BLOCK WIDTHS */
+.sidenav {
+    width: 0%;
+    display: none;
+}
+
+.contentDiv, .contentDivFull {
+    width: 100%
+}
+
+.bStage, .b25, .b25-50, .b33, .b33-50, .b50,
+.b66, .b75, .b100, .bSearchBar, .themes_b33,
+.bSearch, .bButton, .teamContacts {
+    width: 100%
+}
+
+.b25A {
+    width: 25%
+}
+
+.flagDiv, .b33A {
+    width: 33%
+}
+
+.respImg50, .b50A {
+    width: 50%
+}
+
+.respImg {
+    width: 100%
+}
+
+.addDiv, .b66A {
+    width: 66%
+}
+
+.b75A {
+    width: 75%
+}
+
+.newRow {
+    clear: left
+}
+/* EMD OF -- BLOCK WIDTHS */
+
+/* 
+  toBeStyled
+*/
+.toBeStyled {
+    visibility: hidden;
+}
+
+@import url('../css-Roboto.css');
+
+/* North America Healthcare Forum */
+#amNAFBanner {
+    background-image: url(https://www.enterprise-ireland.com/EI_Corporate/en/Events/OurEvents/North-America-Healthcare-Forum/naf_banner.jpg);
+    background-position: top right;
+    background-size: cover;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 600px;
+}
+
+    #amNAFBanner.surgery {
+        background-image: url(https://www.enterprise-ireland.com/EI_Corporate/en/Events/OurEvents/North-America-Healthcare-Forum/naf_banner.jpg);
+        background-repeat: no-repeat;
+        background-color: #016d91;
+    }
+
+    #amNAFBanner h2 {
+        color: #FFF;
+        font-size: 60px;
+        font-weight: 300;
+        margin-top: 150px;
+    }
+
+    #amNAFBanner.surgery h2 {
+        font-weight: 900;
+    }
+
+    #amNAFBanner h3 {
+        color: #fff;
+        font-size: 40px;
+        margin: 0;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+
+        #amNAFBanner h3 + h3 {
+            font-size: 30px;
+            font-weight: 100;
+        }
+
+    #amNAFBanner h4 {
+        color: #fff;
+    }
+
+    #amNAFBanner .btn {
+        margin-top: 15px;
+        font-size: 30px;
+        padding: .475em 2em .4em;
+    }
+
+    #amNAFBanner #hashTag {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+
+/* Ambition Amercia */
+
+#amNABanner {
+    background-image: url(https://www.enterprise-ireland.com/EI_Corporate/en/Events/OurEvents/Ambition-North-America/images/bannerMain.jpg);
+    background-position: top right;
+    background-size: cover;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 600px;
+}
+
+    #amNABanner.asia {
+        background-image: url(https://www.enterprise-ireland.com/EI_Corporate/en/Events/OurEvents/Routes-to-Growth-Asia-Pacific/Images/blank-banner.jpg);
+        background-repeat: no-repeat;
+        background-color: #016d91;
+    }
+
+    #amNABanner.asia-2 {
+        background-color: #2093CD;
+        background-image: url(https://www.enterprise-ireland.com/en/Events/OurEvents/Ambition-Asia-Pacific/Images/EI-Ambition-Asia-banner.jpg);
+        background-repeat: no-repeat;
+    }
+
+    #amNABanner.bigideas {
+        background-color: #2093CD;
+        background-image: url(https://www.enterprise-ireland.com/EI_Corporate/en/Events/OurEvents/BigIdeas/Images/Bigideasmainheaderv1.jpg);
+        background-repeat: no-repeat;
+    }
+
+
+
+
+form[action^="/en/Events/OurEvents/Ambition-Asia-Pacific/"] #page-pre-detail .page-pre-wrap {
+    background-color: transparent;
+}
+
+#amNABanner.asia-2 .btn {
+    background: #2b416e;
+}
+
+
+    #amNABanner.asia-2 .btn:hover {
+        color: #FFF;
+        background: #CF8223;
+    }
+
+#amNABanner h2 {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 150px;
+    max-width: 50%;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15)
+}
+
+#amNABanner.asia-2 h2 {
+    font-weight: 900;
+}
+
+#amNABanner.asia-2 h3 {
+    font-size: 25px !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15)
+}
+
+#amNABanner h3 {
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+    #amNABanner h3 + h3 {
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+#amNABanner h4 {
+    color: #fff;
+}
+
+#amNABanner .btn {
+    margin-top: 15px;
+    font-size: 30px;
+    padding: .475em 2em .4em;
+}
+
+#amNABanner #hashTag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.sponsorImg {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+#amNABanner #hashTag a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+    #amNABanner #hashTag a:hover {
+        color: #ff9b00
+    }
+
+#amNABanner #mouse {
+    display: inline-block;
+    width: auto;
+}
+
+#amNAContent {
+    margin-top: 650px
+}
+
+#amNAFContent {
+    margin-top: 650px
+}
+
+/* Speaker Slider */
+#lightSlider {
+    visibility: hidden
+}
+
+.speakerSlider #lightSlider {
+    visibility: visible;
+    min-height: 430px;
+}
+
+#amNAContent .lSSlideOuter ul li:before,
+#amNAContent #lightSlider li:before {
+    display: none
+}
+
+.lSAction > a {
+    -webkit-filter: invert(100%);
+    filter: invert(100%)
+}
+
+.content .speakerSlider li,
+.content .speakerSlider .right {
+    text-align: center
+}
+
+#amNAContent h2 {
+    margin-top: 0;
+    font-size: 1.625em;
+    margin-bottom: 32px;
+}
+/* InfoGraphic */
+#naInfoGraphic {
+    background: #f3f3f3;
+    padding-bottom: 30px;
+}
+
+    #naInfoGraphic img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+.naCompanyProfile {
+    position: relative;
+    border: 10px solid #E6E7E8;
+    margin: 30px;
+    border-radius: 30px;
+    padding-top: 100px;
+}
+
+#naInfoGraphic img.coProLead {
+    position: absolute;
+    top: -100px;
+    left: -30px;
+    width: 190px;
+}
+
+.naCompanyProfile .col-md-4 {
+    text-align: center
+}
+
+    .naCompanyProfile .col-md-4 p {
+        text-align: left;
+        padding: 10px 30px;
+    }
+
+    .naCompanyProfile .col-md-4 img {
+        max-width: 137px;
+    }
+
+#gulfLanding.amNALanding {
+    background-image: url('https://www.enterprise-ireland.com/EI_Corporate/en/Events/OurEvents/Ambition-North-America/images/demoClickThruBg.jpg')
+}
+
+
+#bigIdeasLanding.amNALanding {
+     background-image: url(https://www.enterprise-ireland.com/EI_Corporate/en/Events/OurEvents/BigIdeas/Images/Bigideasublocationbackgroundv3.jpg);
+}
+
+/* Ambition Mouse */
+#amNABanner span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 5px 0 6px 9px;
+}
+
+.unu {
+    margin-top: 6px;
+}
+
+.unu, .doi, .trei {
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+
+.unu {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -webkit-animation-direction: alternate;
+}
+
+.doi {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+}
+
+.trei {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -webkit-animation-direction: alternate;
+}
+
+#amNABanner .mouse {
+    height: 42px;
+    width: 28px;
+    border-radius: 20px;
+    transform: none;
+    border: 2px solid white;
+    top: 170px;
+}
+
+#amNABanner .wheel {
+    height: 15px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: white;
+    position: relative;
+}
+
+#amNABanner .wheel {
+    -webkit-animation: mouse-wheel 1.2s ease infinite;
+    -moz-animation: mouse-wheel 1.2s ease infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+@-moz-keyframes mouse-wheel {
+    0% {
+        top: 1px;
+    }
+
+    50% {
+        top: 2px;
+    }
+
+    100% {
+        top: 3px;
+    }
+}
+
+@-webkit-keyframes mouse-scroll {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes mouse-scroll {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes mouse-scroll {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes mouse-scroll {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* Ambition: America Mobile */
+/* Speakers */
+@media (min-width: 768px) {
+    .speakerSlider #lightSlider {
+        min-height: 500px
+    }
+
+    .media-item .media-left + .media-right {
+        margin-left: 25%
+    }
+}
+
+@media (max-width: 760px) {
+    #amNABanner {
+        height: 700px
+    }
+
+    #amNABanner.asia, 
+    #amNABanner.asia-2 {
+        background-size: contain;
+    }
+
+    #amNABanner.asia .container {
+        text-align: center !important
+    }
+
+    #amNAFBanner {
+        height: 700px
+    }
+
+    #amNAFBanner.surgery {
+        background-size: contain
+    }
+
+    #amNAFBanner.surgery .container {
+        text-align: center !important
+    }
+
+    #amNAFContent {
+        margin-top: 750px
+    }
+
+    .speakerSlider li h3 {
+        margin: 5px 0 10px;
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .speakerSlider li p {
+        font-size: 12px
+    }
+
+    .media-item .media-left {
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    #naInfoGraphic img.coProLead {
+        top: -40px;
+        width: 150px;
+    }
+}
+
+/* START OF */
+/* CSS GLOBAL FIXES */
+/* Make 1st panel green bg 
+
+#hp-carousel .flexslider .slides  li .inner section { background-color: rgba(0, 147, 208, 0.5)}
+
+/* XMASS MESSAGE 
+#hp-carousel .flexslider .slides > li {
+	background-image: url('/EI_Corporate/en/ImageLibrary/homepageBannerImages/xmassBG.jpg');
+	background-size: cover;
+}
+#hp-carousel .flexslider .slides  li:nth-child(2) .inner {
+	background-position: center bottom;
+	background-size: contain;
+	    margin-bottom: 20px;
+		    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+	}
+.flexslider .slides  li:nth-child(2) section {display:none} 
+*/
+/* 1st Slide 
+@media (max-width: 769px) {
+#hp-carousel .flexslider .slides  li:nth-child(2) .inner {background-position: right}
+}*
+@media (max-width: 768px) {
+	/* 2nd Slide 
+	#hp-carousel .flexslider .slides  li:nth-child(3) {display: none !important}
+}
+*/
+/* 2nd Slide */
+/* Make the Div Fully Clickable *
+#hp-carousel .flexslider .slides  li:nth-child(3) .inner section {
+	left: 0; 
+    margin-left: 0; 
+    padding: 0;
+    width: 100%; 
+	background-color: rgba(0, 147, 208, 0.0);
+}
+#hp-carousel .flexslider .slides  li:nth-child(3) .inner section a {
+	height: 400px;
+    width: 100%;
+	}
+#hp-carousel .flexslider .slides  li:nth-child(3) .inner section p,
+#hp-carousel .flexslider .slides  li:nth-child(3) .inner section h2 {color: rgba(0,0,0,0)}
+@media (min-width: 769px) {
+#hp-carousel .flexslider .slides  li:nth-child(3) .inner {background-size: contain !important; background-color: #c3dd84}
+}
+*/
+
+/*  */
+@media (min-width: 768px) {
+    .media-item .media-left {
+        width: 20%;
+        margin-right: 5%;
+    }
+}
+/* START OF -- Home Page & Banner CSS */
+/* Vertical Center Slideshow */
+#hp-carousel .inner section {
+    padding: 1em;
+    bottom: 1.5em;
+    background-color: rgba(0, 147, 208, 0.4);
+}
+
+    #hp-carousel .inner section:hover {
+        background-color: rgba(0, 147, 208, 0.7);
+    }
+
+    #hp-carousel .inner section h2,
+    #hp-carousel .inner section p {
+        color: #FFF
+    }
+
+/* HOW CAN WE HELP YOU SECTION */
+@media (min-width: 500px) {
+    #how-can-we-help-you ul li {
+        width: 33%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+    #how-can-we-help-you ul li a:not(span) {
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 768px) {
+    #how-can-we-help-you ul li {
+        width: 16%;
+    }
+}
+
+/* FACTS FIGURES */
+#key-facts #factFigures li {
+    width: 33%
+}
+
+    #key-facts #factFigures li a img {
+        width: 90%;
+        max-width: 216px;
+    }
+
+@media (max-width: 650px) {
+    #key-facts #factFigures li {
+        width: 100%
+    }
+}
+/* Calender Tweak */
+body .ui-datepicker .ui-datepicker-today a:before {
+    /* content: ""; */
+    border-top: 12px solid #a2d0ea;
+}
+/* Background Image on Calender */
+#featured-event #eventProgramme {
+    background-size: cover
+}
+/* Background Image in Headers */
+#page-pre-detail {
+    background-position: center top
+}
+/* Set Min-Height on section Icon backgrounds */
+#landing-sublocations .landing-template:first-of-type {
+    min-height: 500px
+}
+/* Catch Pages for Banner postition default is center top */
+/* Center bottom */
+form[action^="/en/About-Us/"] #page-pre-detail,
+form[action^="/en/Export-Assistance/"] #landing-sublocations .landing-template {
+    background-position: center bottom
+}
+/* Right Center */
+form[action^="/en/Events/"] #page-pre-detail {
+    background-position: right center
+}
+
+form[action^="/en/events/ambitionnorthamerica/"],
+form[action^="/en/Events/OurEvents/Ambition-North-America/"] #page-pre-detail {
+    background-position: right bottom
+}
+/* rigth top */
+form[action^="/en/Source-a-Product-or-Service-from-Ireland/"]
+#page-pre-detail {
+    background-position: right top
+}
+/* Center center */
+form[action^="/en/News/"] #landing-sublocations .landing-template {
+    background-position: center center
+}
+
+/* END OF -- Home Page & Banner CSS */
+
+/* UK EXPORT - Calculator */
+.brexit-calc input {
+    padding: 0
+}
+
+.sterTab td, .euroTab td {
+    position: relative;
+}
+
+    .sterTab td b, .euroTab td b {
+        position: absolute;
+        transform: translate(0,-50%);
+        top: 20px;
+        pointer-events: none;
+        margin-left: 0.5em;
+    }
+
+    .sterTab td input,
+    .euroTab td input {
+        text-indent: 1em;
+        width: 122px;
+        font-size: 1em;
+    }
+
+#brexit-calculator-result tr.gbp-current-rate #brexit-rate,
+.mobileTableView td div:before {
+    color: #4c4c4c
+}
+
+#brexit-calculator-result tr td {
+    color: green;
+    font-weight: 600
+}
+
+    #brexit-calculator-result tr td.text-red {
+        color: red
+    }
+
+#brexit-calculator-result td span {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+#brexit-calculator-result tr.gbp-current-rate td,
+#brexit-calculator-result tr.gbp-current-rate #brexit-rate {
+    background: #dbf0f7;
+}
+
+#brexit-calculator-result tr td:first-of-type,
+#brexit-calculator-result tr:first-of-type td,
+#brexit-rate,
+#brexit-rate div:before {
+    background: #1594D0;
+    color: #FFF;
+}
+
+#brexit-calculator-result td span:before {
+    content: "\f153\00a0";
+    color: #4c4c4c;
+    font-family: FontAwesome;
+}
+
+@media(max-width: 760px) {
+    .sterTab td b, .euroTab td b {
+        top: 40px;
+    }
+
+    .sterTab td input,
+    .euroTab td input {
+        width: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sterTab td input,
+    .euroTab td input {
+        width: 88px;
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 992px) {
+    .sterTab td input,
+    .euroTab td input {
+        width: 122px;
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 991px) and (min-width: 768px) {
+    .base-rate-wrapper input {
+        margin-top: 8px
+    }
+}
+
+@media (min-width: 1200px) {
+    .sterTab td input,
+    .euroTab td input {
+        width: 150px;
+        font-size: 1em;
+    }
+}
+
+#user-gross input, #pre-gross input,
+#user-net input, #pre-net input {
+    background-color: #f3f3f3;
+}
+
+@-moz-document url-prefix() {
+    fieldset {
+        display: table-cell;
+    }
+}
+
+.base-rate-wrapper {
+    border: 1px solid black;
+    padding: 5px;
+    padding-right: 15px;
+    margin: 20px 0;
+}
+
+.brexit-calc h3 {
+    margin-bottom: 0;
+    color: #1594D0;
+}
+
+#brexit-base-rate-row {
+    background-color: #F2F2F2
+}
+
+.base-rate-wrapper p {
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.text-red {
+    color: red
+}
+
+.gbp-current-rate {
+    background-color: #dbf0f7
+}
+
+.brexit-table {
+    margin-bottom: 20px;
+    border-top: 5px solid #1594D0;
+}
+
+.brexit-table-head {
+    background-color: #F8F9F9
+}
+
+.brexit-table th, .brexit-table td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 16%;
+}
+
+/* Image Auto on box-style-blue */
+.box-style-blue .inner img {
+    float: left;
+    margin: 0 10px 10px 0;
+    max-width: 20%;
+}
+
+.box-style-blue .inner p:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+/* Newsletter Image Auto on box-style-blue */
+form[action^="/en/Publications/Newsletter/"] .box-style-blue .inner img {
+    width: 50%;
+    max-width: 100%;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+#newsLetter figure {
+    margin-bottom: 15px;
+}
+
+    #newsLetter figure + p::after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+    }
+/* Accrodian Override */
+.content .pTools-accordion .ui-accordion-content .row {
+    margin: 0px 0px
+}
+
+    .content .pTools-accordion .ui-accordion-content .row .fa {
+        margin: 0 5px
+    }
+
+.pTools-accordion .ui-accordion-header::before {
+    font-size: 0.5em
+}
+/* CSS for Responsive Templates */
+.textR {
+    text-align: right
+}
+
+a.divLink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* Makes sure the link doesn't get underlined */
+    z-index: 10; /* raises anchor tag above everything else in div */
+    background-color: white; /*workaround to make clickable in IE */
+    opacity: 0; /*workaround to make clickable in IE */
+    filter: alpha(opacity=0); /*workaround to make clickable in IE */
+}
+
+/* FIX Footer ICON color */
+#footer-top .icon-phone:before {
+    color: #fff
+}
+
+#footer-top .icon-fax:before {
+    color: #fff
+}
+
+#footer-top .icon-email:before {
+    color: #fff
+}
+
+/* Break Long URLs */
+table a {
+    word-break: break-word
+}
+
+/* START OF -- Press Release - Figures and Captions */
+/* Images and Captions Solution
+Allows the images to have a caption the same width as image underneath the image
+ul: to fix Issue with list bullets and float in close poroximity
+*/
+.press-release-list ul {
+    overflow: hidden
+}
+
+figure {
+    background-color: #fff;
+    padding: 5px;
+    font-size: .875em;
+    display: table;
+    float: left;
+    margin: 4px 20px 10px 0;
+    max-width: 50%;
+    min-width: 75px;
+    height: auto;
+}
+
+    figure img {
+        display: block;
+        width: 100%;
+    }
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    background: #fff;
+    padding: 0 5px 5px;
+    font-size: .8em;
+    clear: both;
+}
+/* END OF -- Press Release - Figures and Captions */
+
+/* Remove List Styles */
+.spaceDirectory ul li:before,
+.content .techGateList ul li:before {
+    content: ""
+}
+
+/* Techgateway List Styles */
+.techGateList .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+    .techGateList .list-group-item:last-child {
+        margin-bottom: 0;
+        border-top: 1px solid #ddd;
+    }
+
+    .techGateList .list-group-item:hover {
+        border-top: 2px solid #f48126;
+    }
+
+    .techGateList .list-group-item a:hover {
+        font-size: 1.2em;
+    }
+
+    .techGateList .list-group-item img {
+        width: 25px;
+        margin-right: 5px;
+    }
+
+    .techGateList .list-group-item a,
+    .techGateList .list-group-item span {
+        font-weight: bolder
+    }
+
+    .techGateList .list-group-item span {
+        font-size: 0.9em;
+        width: 50%;
+        display: inline-block;
+    }
+
+    .techGateList .list-group-item a {
+        text-decoration: none;
+        color: #f48126;
+        font-size: 1.1em;
+    }
+/* Techgateway List Styles */
+
+/* IMPROVE PTOOLS - ACCORDION */
+.content .pTools-accordion-header.ui-accordion-header {
+    border: 1px solid #d9d9d9;
+    background-color: #f4f4f4;
+    margin-top: 10px;
+    transition: background-color 1s ease;
+}
+
+    .content .pTools-accordion-header.ui-accordion-header h2 {
+        font-size: 1em;
+        color: rgb(102, 102, 102);
+    }
+
+    .content .pTools-accordion-header.ui-accordion-header.ui-accordion-header-active {
+        border-bottom: 0;
+        background-color: #FFF;
+    }
+
+    .content .pTools-accordion-header.ui-accordion-header.ui-state-hover {
+        color: #000
+    }
+
+.content .pTools-accordion-content.ui-accordion-content {
+    background-color: #f4f4f4;
+    transition: background-color 1s ease;
+}
+
+.content .pTools-accordion-content.ui-accordion-content-active /* Active Content*/ {
+    background-color: #FFF;
+    border: 1px solid #e3e3e3;
+    padding: 20px;
+    border-top: 0;
+    font-size: 1em;
+}
+
+    .content .pTools-accordion-content.ui-accordion-content-active li {
+        font-size: 1em
+    }
+/* Change size button/open */
+.content .pTools-accordion .ui-accordion-header:before {
+    font-size: 1.5em;
+    width: 25px;
+    height: 25px;
+    line-height: 28px;
+}
+
+.content .pTools-accordion .ui-accordion-header.ui-accordion-header-active:before {
+    line-height: 20px
+}
+/* IMPROVE PTOOLS - ACCORDION */
+
+/* END OF -- CSS GLOBAL FIXES */
+
+/* START OF -- CUSTOM APPS AND TEMPLATES */
+/* START OF -- STAGES TEMPLATE 3/4 */
+/* Market Centre page */
+.bStage {
+    position: relative;
+}
+
+.contentDiv a {
+    text-decoration: none
+}
+/* Stages Styling */
+.bStage h1 {
+    float: left;
+    margin: 1em;
+}
+
+.bStage h3 {
+    color: #FFF;
+    margin: 0;
+}
+/* Market Centre */
+.marketCentre .bStage {
+    width: 100%;
+    background: #BFBDB7;
+    border-radius: 5px;
+    padding: 0;
+    margin: 3px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.marketCentre .bubble {
+    width: 80%;
+    position: relative;
+    left: 20%;
+    font-size: 1em;
+    color: #FFF;
+    height: auto;
+}
+
+    .marketCentre .bubble h3 {
+        padding: 1em 0 0 0;
+        margin: 0
+    }
+
+.marketCentre .bStage .bubble .topCorner {
+    position: absolute;
+    margin: 0;
+    font-size: 2.5em;
+    z-index: 500;
+    left: -20%;
+}
+
+.marketCentre .bStage:hover .bubble,
+.marketCentre .bStage:hover {
+    background: #0093D0
+}
+
+.svgIcon {
+    width: 20%;
+    position: absolute;
+    left: -20%;
+    color: #FFF;
+}
+
+    .svgIcon path {
+        color: #FFF
+    }
+
+
+/* END OF -- STAGES TEMPLATE 3/4 */
+
+
+
+
+/* START OF -- Gulf Guide */
+#gulfGuide .intro,
+#gulfGuide .ac-container input:checked ~ article.ac-large {
+    padding: 20px
+}
+
+#gulfGuide .resp-tab-content {
+    padding: 0
+}
+
+#gulfGuide .flags img {
+    margin: 0 2%;
+    box-shadow: 0px 1px 20px 2px #e5e6ea;
+}
+
+#gulfGuide .ac-container article {
+    background: rgba(255, 255, 255, 1)
+}
+
+#gulfGuide blockquote p:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    color: rgb(193, 193, 193);
+    position: relative;
+    top: -10px;
+    left: 0;
+    z-index: 2;
+    font-size: 1.6em;
+    padding-right: 10px;
+}
+
+#gulfGuide blockquote p:after {
+    content: "\f10e";
+    font-family: FontAwesome;
+    color: rgb(193, 193, 193);
+    position: relative;
+    left: 0;
+    z-index: 2;
+    font-size: 1.6em;
+    padding-left: 10px;
+}
+
+#gulfLanding #landing-sublocations .svg-icon-wrapper {
+    visibility: visible
+}
+
+    #gulfLanding #landing-sublocations .svg-icon-wrapper:hover {
+        background: #0093d0
+    }
+
+        #gulfLanding #landing-sublocations .svg-icon-wrapper:hover .fa {
+            color: #FFF
+        }
+
+#gulfLanding #landing-sublocations .location-name a {
+    color: #666
+}
+
+    #gulfLanding #landing-sublocations .location-name a:hover {
+        color: #0093d0;
+        text-decoration: none;
+    }
+
+#gulfLanding #landing-sublocations .svg-icon-wrapper .fa {
+    font-size: 3em;
+    padding-top: 15px;
+}
+
+#gulfLanding #landing-sublocations .inner {
+    padding: 30px
+}
+
+#gulfLanding {
+    background-image: url('https://www.enterprise-ireland.com/en/Export-Assistance/International-Office-Network-Services-and-Contacts/Access-Gulf-States/images/gulfBg.jpg');
+    padding: 2em 0;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#gulfGuide .resp-tabs-list li {
+    width: 14.2%;
+    font-size: 12px;
+}
+
+#gulfGuide .ulGrowthSectors.resp-tabs-list li {
+    width: 16.6%
+}
+
+#gulfGuide ul li.resp-tab-item:before {
+    font-size: 20px !important;
+    top: 3px;
+}
+
+#gulfGuide ul li:before {
+    content: "\f111";
+    color: #8e8d8d;
+    left: 0;
+    font-size: 8px !important;
+    top: 8px;
+    position: absolute;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+#bigIdeasLanding #landing-sublocations .svg-icon-wrapper {
+visibility: visible;
+}
+
+#bigIdeasLanding #landing-sublocations .svg-icon-wrapper .fa {
+	font-size: 3em;
+	padding-top: 15px;
+}
+
+
+/* pTools Overides */
+.content .subNav ul li:before {
+    content: " ";
+    display: none;
+}
+
+.content .subNav ul li + li {
+    margin-top: 0;
+    vertical-align: top;
+}
+
+.subNav ul {
+    background-color: #247ca1;
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 3px 5px #999;
+    -moz-box-shadow: 0 3px 5px #999;
+    box-shadow: 0 3px 5px #999;
+}
+
+.subNav li {
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid #888;
+    padding: 0;
+    height: 50px;
+    line-height: 20px;
+    font-size: 1.1em;
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    text-align: center;
+}
+
+.subNav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+    padding: 5px;
+    height: 50px;
+}
+
+    .subNav a:hover {
+        background-color: #0093d0;
+    }
+
+    .subNav a.active {
+        background-color: #f9f9f9;
+        color: #444;
+        cursor: default;
+    }
+
+
+@media screen and (max-width: 600px) {
+    .content .subNav ul {
+        display: block;
+    }
+}
+
+
+@media print {
+    /* Accordian Visible */
+    .ac-container input ~ article.ac-large {
+        height: auto
+    }
+
+    #gulfGuide .resp-tab-content {
+        display: block
+    }
+
+    #gulfGuide #parentHorizontalTab {
+        border: none
+    }
+
+    #gulfGuide #tabHorzList {
+        display: none
+    }
+
+    .subNav {
+        display: none
+    }
+}
+
+/* END OF -- Gulf Guide */
+
+
+
+
+
+
+
+/* START OF -- Sources of Equity Graph */
+.sourcesEquity, .chartHeader {
+    background-image: url('https://www.enterprise-ireland.com/EI_Corporate/en/ImageLibrary/ganntBG.png');
+    background-size: contain;
+}
+
+    .sourcesEquity .chartHead {
+        display: inline-block;
+        width: 16.6%;
+        vertical-align: top;
+        text-align: center;
+    }
+
+    .sourcesEquity .chartBar {
+        display: block;
+        min-height: 2.5em;
+        padding: 0.5em;
+        color: #FFF;
+    }
+
+        .sourcesEquity .chartBar a {
+            color: #FFF;
+            font-size: 1.125em;
+            word-break: none;
+            font-weight: bold
+        }
+
+    .sourcesEquity .bar1 {
+        width: 38%;
+        margin-left: 0;
+        background: #D95301;
+    }
+
+    .sourcesEquity .bar2 {
+        width: 50%;
+        margin-left: 5%;
+        background: #F17306;
+    }
+
+    .sourcesEquity .bar3 {
+        width: 42%;
+        margin-left: 16%;
+        background: #FF8819;
+    }
+
+    .sourcesEquity .bar4 {
+        width: 66%;
+        margin-left: 25%;
+        background: #33D6FF;
+    }
+
+    .sourcesEquity .bar5 {
+        width: 33%;
+        margin-left: 67%;
+        background: #107DA7;
+    }
+
+    .sourcesEquity .bar6 {
+        width: 66%;
+        margin-left: 5%;
+        background: #106BA6;
+    }
+
+    .sourcesEquity .bar7 {
+        width: 16%;
+        margin-left: 84%;
+        background: #106BA6;
+    }
+/* END OF -- Sources of Equity Graph */
+
+/* inSuList Innovation List Accordian Overrides */
+.inSuList .pTools-accordion .ui-accordion-header:before {
+    background-color: rgba(38, 131, 165,0.3)
+}
+
+.inSuList .pTools-accordion-header {
+    color: #FFF;
+    padding-right: 50px;
+}
+    /* .inSuList .pTools-accordion-header:nth-child(1) + .ui-accordion-content-active */
+    /* Style the active tab which follows the preceding header */
+    /* Section # 1 */
+    .inSuList .pTools-accordion-header:nth-child(1) + .ui-accordion-content-active,
+    .inSuList .pTools-accordion-header:nth-child(1) {
+        width: 65%
+    }
+
+    .inSuList .pTools-accordion-header:nth-child(1) {
+        background: rgba(247,35,73,1)
+    }
+
+    .inSuList .pTools-accordion-header.ui-accordion-header.ui-accordion-header-active:nth-child(1) {
+        background: rgba(247,35,73,0.7)
+    }
+    /* Section # 2 */
+    .inSuList .pTools-accordion-header:nth-child(3) + .ui-accordion-content-active,
+    .inSuList .pTools-accordion-header:nth-child(3) {
+        width: 70%
+    }
+
+    .inSuList .pTools-accordion-header:nth-child(3) {
+        background: rgba(241,103,69,1)
+    }
+
+    .inSuList .pTools-accordion-header.ui-accordion-header.ui-accordion-header-active:nth-child(3) {
+        background: rgba(241,103,69,0.7)
+    }
+    /* Section # 3 */
+    .inSuList .pTools-accordion-header:nth-child(5) + .ui-accordion-content-active,
+    .inSuList .pTools-accordion-header:nth-child(5) {
+        width: 75%
+    }
+
+    .inSuList .pTools-accordion-header:nth-child(5) {
+        background: rgba(255,198,93,1)
+    }
+
+    .inSuList .pTools-accordion-header.ui-accordion-header.ui-accordion-header-active:nth-child(5) {
+        background: rgba(255,198,93,0.7)
+    }
+    /* Section # 4 */
+    .inSuList .pTools-accordion-header:nth-child(7) + .ui-accordion-content-active,
+    .inSuList .pTools-accordion-header:nth-child(7) {
+        width: 80%
+    }
+
+    .inSuList .pTools-accordion-header:nth-child(7) {
+        background: rgba(123,200,164,1)
+    }
+
+    .inSuList .pTools-accordion-header.ui-accordion-header.ui-accordion-header-active:nth-child(7) {
+        background: rgba(123,200,164,0.7)
+    }
+    /* Section # 5 */
+    .inSuList .pTools-accordion-header:nth-child(9) + .ui-accordion-content-active,
+    .inSuList .pTools-accordion-header:nth-child(9) {
+        width: 85%
+    }
+
+    .inSuList .pTools-accordion-header:nth-child(9) {
+        background: rgba(76,195,217,1)
+    }
+
+    .inSuList .pTools-accordion-header.ui-accordion-header.ui-accordion-header-active:nth-child(9) {
+        background: rgba(76,195,217,0.7)
+    }
+    /* Section # 6 */
+    .inSuList .pTools-accordion-header:nth-child(11) + .ui-accordion-content-active,
+    .inSuList .pTools-accordion-header:nth-child(11) {
+        width: 90%
+    }
+
+    .inSuList .pTools-accordion-header:nth-child(11) {
+        background: rgba(147,100,141,1)
+    }
+
+    .inSuList .pTools-accordion-header.ui-accordion-header.ui-accordion-header-active:nth-child(11) {
+        background: rgba(147,100,141,0.7)
+    }
+    /* Section # 7 */
+    .inSuList .pTools-accordion-header:nth-child(13) + .ui-accordion-content-active,
+    .inSuList .pTools-accordion-header:nth-child(13) {
+        width: 95%
+    }
+
+    .inSuList .pTools-accordion-header:nth-child(13) {
+        background: rgba(121, 52, 84, 1)
+    }
+
+    .inSuList .pTools-accordion-header.ui-accordion-header.ui-accordion-header-active:nth-child(13) {
+        background: rgba(121, 52, 84, 0.7)
+    }    
+    /* Section # 8 */
+    .inSuList .pTools-accordion-header:nth-child(15) {
+        background: rgba(64,64,64,1)
+    }
+
+    .inSuList .pTools-accordion-header.ui-accordion-header.ui-accordion-header-active:nth-child(15) {
+        background: rgba(64,64,64,0.7)
+    }
+
+/* START OF -- International Offices Map */
+#map-canvas2, #map-canvas3, #map-canvas4, #map-canvas5,
+#map-canvas6, #map-canvas7 {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.125em;
+}
+
+#internationOfficesMap {
+    height: 460px;
+    width: 100%;
+}
+
+#overlayButtons {
+    background-color: rgba(0, 147, 208,1);
+    height: 50px;
+    pointer-events: none;
+    position: relative;
+    color: #fff;
+    padding-left: 10px;
+    z-index: 50;
+}
+
+#internationOfficesMap iframe {
+    width: 100%;
+    position: relative;
+}
+/* END OF -- International Offices Map */
+
+/* START OF -- Horizontal Accordion - Research Commercialisation */
+.resp-tabs-list li {
+    color: rgb(193, 193, 193);
+    font-weight: 800;
+    font-size: 14px;
+    display: inline-block;
+    padding: 12px 5px;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    width: 20%;
+    height: 100px;
+    max-height: 100px;
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.resp-tab-content {
+    display: none;
+    padding: 15px;
+}
+
+.resp-tab-active {
+    border-top: 4px solid #5AB1D0 !important;
+    border-bottom: 0 !important;
+    margin-bottom: -1px !important;
+}
+
+.resp-tab-active {
+    border-bottom: solid #fff;
+    background-color: #fff;
+}
+
+.resp-content-active, .resp-accordion-active {
+    display: block
+}
+
+h2.resp-accordion {
+    font-size: 13px;
+    border: 1px solid #c1c1c1;
+    border-top: 0px solid #c1c1c1;
+    margin: 0px;
+    padding: 10px 15px;
+}
+
+h2.resp-tab-active {
+    border-bottom: 0px solid #c1c1c1 !important;
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
+
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #c1c1c1 !important;
+    background: blue;
+}
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 30%;
+}
+
+.resp-vtabs .resp-tabs-list li {
+    display: block;
+    padding: 15px 15px !important;
+    margin: 0 0 4px;
+    cursor: pointer;
+    float: none;
+}
+
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    border: 1px solid #c1c1c1;
+    float: left;
+    width: 68%;
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+}
+
+.resp-vtabs .resp-tab-content {
+    border: none;
+    word-wrap: break-word;
+}
+
+.resp-vtabs li.resp-tab-active {
+    position: relative;
+    z-index: 1;
+    margin-right: -1px !important;
+    padding: 14px 15px 15px 14px !important;
+    border-top: 2px solid #5AB1D0 !important;
+    border-left: 4px solid #5AB1D0 !important;
+    border-right: 4px solid #5AB1D0 !important;
+    margin-bottom: 4px !important;
+    border-right: 1px #FFF solid !important;
+}
+
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #c1c1c1;
+}
+
+h2.resp-tab-active span.resp-arrow {
+    border: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #9B9797;
+}
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+    background: #DBDBDB
+}
+
+.resp-easy-accordion h2.resp-accordion {
+    display: block
+}
+
+.resp-easy-accordion .resp-tab-content {
+    border: 1px solid #c1c1c1
+}
+
+    .resp-easy-accordion .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1
+    }
+
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.resp-tab-content-active {
+    display: block
+}
+
+h2.resp-accordion:first-child {
+    border-top: 1px solid #c1c1c1
+}
+
+section {
+    padding-bottom: 3em;
+}
+
+.resp-tabs-list .fa {
+    display: block;
+    padding: 0 10px 5px 10px;
+}
+
+#parentHorizontalTab {
+    border: 1px solid #5AB1D0;
+    border-top: 0;
+}
+
+    #parentHorizontalTab .resp-tab-item {
+        position: relative;
+        z-index: 5;
+        border: 1px solid rgb(193, 193, 193);
+    }
+
+        #parentHorizontalTab .resp-tab-item.resp-tab-active:before {
+            color: #0093d0
+        }
+
+        #parentHorizontalTab .resp-tab-item:before {
+            content: "\f054";
+            font-family: FontAwesome;
+            color: rgb(193, 193, 193);
+            position: relative;
+            left: 0;
+            z-index: 2;
+            float: right;
+            font-size: 2.5em;
+        }
+
+    #parentHorizontalTab .hor_1 .resp-tab-item:last-child:before {
+        content: none;
+    }
+
+.stepnum {
+    display: block;
+    color: rgb(193, 193, 193);
+    position: absolute;
+    z-index: 1;
+    top: -50px;
+    font-size: 2.5em;
+    opacity: 0.8;
+}
+
+#parentHorizontalTab ul li + li {
+    margin-top: 0px
+}
+/* END OF --  Horizontal Accordion - Research Commercialisation */
+
+/* START OF -- Research-Innovation - Themes */
+/* List Types for Themes*/
+.themeDiv article a {
+    display: list-item;
+    padding: 5px;
+    border-bottom: 2px rgba(0,0,0,0.1) ridge;
+    color: #474747;
+}
+
+.themeDiv article p {
+    padding: 10px
+}
+
+.themeDiv article a:hover {
+    background: rgba(0,0,0,0.2)
+}
+
+.ulHm {
+    background: rgb(0,176,218)
+}
+
+.ulF {
+    background: rgb(241,172,51)
+}
+
+.ulE {
+    background: rgb(134,204,23)
+}
+
+.ulMm {
+    background: rgb(239,56,41)
+}
+
+.ulBp {
+    background: rgb(94,56,149)
+}
+
+.ulIct {
+    background: rgb(182,48,146)
+}
+
+.ulB {
+    background: #016186
+}
+/* Horizontal Accordion - Research-Innovation - Themes */
+.ac-container label {
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 1em;
+}
+
+    .ac-container label:hover {
+        background: rgba(255, 255, 255, 0.5)
+    }
+
+    .ac-container label .fa {
+        font-size: 1.5em;
+        width: 100px;
+        padding: 5px 20px 0 0;
+    }
+
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover {
+    text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3), 0px 2px 2px rgba(255,255,255,0.1);
+}
+
+    .ac-container label:hover:after,
+    .ac-container input:checked + label:hover:after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 13px;
+        top: 7px;
+        background: transparent url(https://www.enterprise-ireland.com/img/arrow_down.png) no-repeat center center;
+    }
+
+.ac-container input {
+    display: none
+}
+
+.ac-container article {
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+
+.ac-container input:checked ~ article.ac-large {
+    height: auto
+}
+/* END OF -- Research-Innovation - Themes */
+
+/* START OF -- Space Directory */
+.filter-options select {
+    width: 100%
+}
+
+#spaceUlParent li h3 {
+    color: #000
+}
+
+#spaceUlParent, #spaceUlParent ul, #spaceUlParent li {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+    /* Space Directory - spaceItem Row */
+    .spaceItem a, #spaceUlParent ul, #spaceUlParent .filter-options {
+        display: inline-block;
+        width: 32%;
+        vertical-align: top;
+    }
+
+.spaceItem {
+    border-bottom: 1px rgba(0,0,0,0.3) solid;
+    min-height: 130px;
+    max-height: 160px;
+}
+
+.psaceItem.oceItem {
+    min-height: 120px;
+    max-height: 120px;
+}
+
+.spaceItem img {
+    max-width: 80%;
+    padding-top: 5px;
+    max-height: 95px
+}
+/* Space Directory - List Backgrounds */
+.spaceItem ul:first-of-type {
+    background: linear-gradient(90deg, rgba(189,99,0,0.5) 2%, rgba(189,99,0,0) 2%)
+}
+
+.servDomDiv, .servDomDiv select {
+    background: rgba(189,99,0,0.5)
+}
+
+.techDomDiv, .techDomDiv select {
+    background: rgba(132,189,211,0.99)
+}
+
+.spaceItem ul {
+    background: linear-gradient(90deg, rgba(132,189,211,0.99) 2%, #fff 2%);
+    min-height: 145px;
+}
+
+#spaceUlParent .spaceItem ul li {
+    padding: 5px 0 0 15px
+}
+/* Space Directory - List Removed Amination  */
+li.removed-item {
+    -webkit-animation: removed-item-animation .6s cubic-bezier(.55,-0.04,.91,.94) forwards;
+    -o-animation: removed-item-animation .6s cubic-bezier(.55,-0.04,.91,.94) forwards;
+    animation: removed-item-animation .6s cubic-bezier(.55,-0.04,.91,.94) forwards;
+    border: 0;
+    min-height: 0;
+    transition-timing-function: linear, step-end;
+}
+
+li.restored-item {
+    -webkit-animation: openspace .3s ease forwards, restored-item-animation .3s .3s cubic-bezier(0,.8,.32,1.07) forwards;
+    -o-animation: openspace .3s ease forwards, restored-item-animation .3s .3s cubic-bezier(0,.8,.32,1.07) forwards;
+    animation: openspace .3s ease forwards, restored-item-animation .3s .3s cubic-bezier(0,.8,.32,1.07) forwards;
+    border-bottom: 1px rgba(0,0,0,0.3) solid;
+    min-height: 100px;
+    transition: opacity 2s linear, height 2s step-start;
+}
+/* END OF -- Space Directory */
+
+/*START OF -- Client Jobs App */
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* display none until init */
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
+}
+
+    .owl-carousel .owl-wrapper {
+        display: none;
+        position: relative;
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+
+    .owl-carousel .owl-wrapper-outer {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+        .owl-carousel .owl-wrapper-outer.autoHeight {
+            -webkit-transition: height 500ms ease-in-out;
+            -moz-transition: height 500ms ease-in-out;
+            -ms-transition: height 500ms ease-in-out;
+            -o-transition: height 500ms ease-in-out;
+            transition: height 500ms ease-in-out;
+        }
+
+    .owl-carousel .owl-item {
+        float: left
+    }
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+    cursor: pointer
+}
+
+.owl-controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* mouse grab icon */
+.grabbing {
+    cursor: url(https://www.enterprise-ireland.com/en/grabbing.png) 8 8, move
+}
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+
+/* Client Jobs Slideshow Theme */
+.owl-theme .owl-controls {
+    margin-top: 10px;
+    text-align: center;
+}
+/* Styling Next and Prev buttons */
+.slideShowNavi div {
+    display: inline-block
+}
+
+.slideDropDown {
+    width: 70%;
+    margin: 0 15%;
+}
+
+    .slideDropDown select {
+        width: 100%;
+        text-align: center;
+    }
+
+.btnSlidePrev, .btnSlideNext {
+    color: #0093d0;
+    padding: 0 10px;
+}
+
+.btnSlidePrev {
+    float: left
+}
+
+.btnSlideNext {
+    float: right
+}
+
+.slideShowBreadcrumbs h4 {
+    text-align: center;
+    color: #C1C1C1;
+    font-size: 0.8em;
+    width: 90%;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    color: #FFF;
+    display: inline-block;
+    zoom: 1;
+    *display: inline; /*IE7 life-saver */
+    margin: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background: #869791;
+    filter: Alpha(Opacity=50); /*IE7 fix*/
+    opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+    filter: Alpha(Opacity=100); /*IE7 fix*/
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; /*IE7 life-saver */
+}
+
+    .owl-theme .owl-controls .owl-page span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin: 5px 7px;
+        filter: Alpha(Opacity=50); /*IE7 fix*/
+        opacity: 0.5;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        background: #869791;
+    }
+
+    .owl-theme .owl-controls .owl-page.active span,
+    .owl-theme .owl-controls.clickable .owl-page:hover span {
+        filter: Alpha(Opacity=100); /*IE7 fix*/
+        opacity: 1;
+    }
+    /* If PaginationNumbers is true */
+    .owl-theme .owl-controls .owl-page span.owl-numbers {
+        height: auto;
+        width: auto;
+        color: #FFF;
+        padding: 2px 10px;
+        font-size: 12px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
+/* preloading images */
+.owl-item.loading {
+    min-height: 150px;
+    background: url(https://www.enterprise-ireland.com/en/AjaxLoader.gif) no-repeat center center
+}
+
+#clientJobsSlider .owl-item div {
+    padding: 5px
+}
+
+#clientJobsSlider .owl-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+/* CSS for Company Panels - Grids + Figures and Hover Animations */
+.grid {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    list-style: none;
+    text-align: center;
+}
+    /* Common style */
+    .grid figure {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        margin: 10px 1%;
+        max-width: 480px;
+        max-height: 360px;
+        width: 23%;
+        height: auto;
+        background: #3085a3;
+        text-align: center;
+        cursor: pointer;
+        padding: 0px;
+        display: inline;
+    }
+
+        .grid figure img {
+            position: relative;
+            display: block;
+            min-height: 100%;
+            max-width: 100%;
+            opacity: 0.8;
+        }
+
+        .grid figure figcaption {
+            padding: 0.5em;
+            color: #DEDDDD;
+            text-transform: uppercase;
+            font-size: 1.25em;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+            .grid figure figcaption::before,
+            .grid figure figcaption::after {
+                pointer-events: none
+            }
+
+            .grid figure figcaption,
+            .grid figure figcaption > a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+            }
+                /* Anchor will cover the whole item by default */
+                /* For some effects it will show as a button */
+                .grid figure figcaption > a {
+                    z-index: 1000;
+                    text-indent: 200%;
+                    white-space: nowrap;
+                    font-size: 0;
+                    opacity: 0.1;
+                    background-color: #FFF;
+                }
+
+        .grid figure h2 {
+            word-spacing: -0.15em;
+            font-weight: 300;
+        }
+
+            .grid figure h2 span {
+                font-weight: 800
+            }
+
+        .grid figure h2,
+        .grid figure p {
+            margin: 0
+        }
+
+        .grid figure p {
+            letter-spacing: 1px;
+            font-size: 68.5%;
+        }
+/* Individual effects */
+figure.effect-apollo {
+    background: #3498db
+}
+
+    figure.effect-apollo img {
+        opacity: 0.95;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale3d(1.05,1.05,1);
+        transform: scale3d(1.05,1.05,1);
+        pointer-events: none;
+    }
+
+    figure.effect-apollo figcaption::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.5);
+        content: '';
+        -webkit-transition: -webkit-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+        transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+    }
+
+    figure.effect-apollo p {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 0.2em;
+        padding: 0 1em;
+        max-width: 150px;
+        border-right: 4px solid #fff;
+        text-align: right;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s;
+        transition: opacity 0.35s;
+    }
+
+    figure.effect-apollo h2 {
+        text-align: left;
+        opacity: 0.05;
+        font-size: 0.8em;
+    }
+
+    figure.effect-apollo:hover img {
+        opacity: 0.5;
+        -webkit-transform: scale3d(.5,.5,1);
+        transform: scale3d(.5,.5,1);
+    }
+
+    figure.effect-apollo:hover h2 {
+        color: #000;
+        opacity: 1;
+        -webkit-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+    }
+
+    figure.effect-apollo:hover figcaption::before {
+        -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+        transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+    }
+
+    figure.effect-apollo:hover p {
+        opacity: 1;
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+    }
+
+/* Dropdown for Client Jobs */
+.clientJobsDiv ::selection {
+    background: transparent
+}
+
+.clientJobsDiv ::-moz-selection {
+    background: transparent
+}
+
+.wrapper-demo {
+    margin: 60px 0 0 0;
+    *zoom: 1;
+    font-weight: 400;
+}
+
+    .wrapper-demo:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+.wrapper-dropdown-3 {
+    /* Size and position */
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 5%;
+    z-index: 500;
+    /* Styles */
+    background: #fff;
+    border-radius: 7px;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px rgba(50,50,50,0.1);
+    cursor: pointer;
+    outline: none;
+    /* Font settings */
+    font-weight: bold;
+    color: #0093d0;
+}
+
+    .wrapper-dropdown-3:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin-top: -3px;
+        border-width: 6px 6px 0 6px;
+        border-style: solid;
+        border-color: #0093d0 transparent;
+    }
+
+    .wrapper-dropdown-3 .dropdown {
+        /* Size & position */
+        position: absolute;
+        top: 140%;
+        left: 0;
+        right: 0;
+        /* Styles */
+        background: white;
+        border-radius: inherit;
+        border: 1px solid rgba(0,0,0,0.17);
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        font-weight: normal;
+        -webkit-transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+        transition: all 0.5s ease-in;
+        list-style: none;
+        /* Hiding */
+        opacity: 0;
+        display: none;
+        pointer-events: none;
+    }
+
+        .wrapper-dropdown-3 .dropdown:after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 100%;
+            right: 15px;
+            border-width: 0 6px 6px 6px;
+            border-style: solid;
+            border-color: #fff transparent;
+        }
+
+        .wrapper-dropdown-3 .dropdown:before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 100%;
+            right: 13px;
+            border-width: 0 8px 8px 8px;
+            border-style: solid;
+            border-color: rgba(0,0,0,0.1) transparent;
+        }
+
+.content .wrapper-dropdown-3 ul li:before {
+    content: ''
+}
+
+.wrapper-dropdown-3 .dropdown li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #0093d0;
+    border-bottom: 1px solid #e6e8ea;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-3 .dropdown li i {
+    float: right;
+    color: inherit;
+    font-size: 1em;
+}
+
+.wrapper-dropdown-3 .dropdown li:first-of-type a {
+    border-radius: 7px 7px 0 0
+}
+
+.wrapper-dropdown-3 .dropdown li:last-of-type a {
+    border: none;
+    border-radius: 0 0 7px 7px;
+}
+/* Hover state */
+.wrapper-dropdown-3 .dropdown li:hover a {
+    background: #f3f8f8
+}
+/* Active state */
+.wrapper-dropdown-3.active .dropdown {
+    opacity: 1;
+    display: inline-block;
+    pointer-events: auto;
+}
+/* No CSS3 support */
+.no-opacity .wrapper-dropdown-3 .dropdown,
+.no-pointerevents .wrapper-dropdown-3 .dropdown {
+    display: none;
+    opacity: 1; /* If opacity support but no pointer-events support */
+    pointer-events: auto; /* If pointer-events support but no pointer-events support */
+}
+
+.no-opacity .wrapper-dropdown-3.active .dropdown,
+.no-pointerevents .wrapper-dropdown-3.active .dropdown {
+    display: block
+}
+/* END OF -- Client Jobs */
+/* END OF -- CUSTOM APPS AND TEMPLATES */
+
+/* START OF -- TABLES AND mobileTableView */
+/* Tables Make the first Row Bold to reflect Headers */
+.mobileTableView tr:first-child td {
+    font-weight: bold
+}
+
+@media only screen and (max-width: 960px), only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Force table to not be like tables anymore */
+    table, .mobileTableView thead,
+    .mobileTableView tbody, .mobileTableView th,
+    .mobileTableView td, .mobileTableView tr {
+        display: block
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .mobileTableView tr:first-child {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .mobileTableView th, .mobileTableView td {
+        padding: 8px;
+        border-top: 0px solid #ddd;
+    }
+
+        .mobileTableView td.center {
+            text-align: left;
+        }
+
+    tr {
+        border-bottom: 1px solid #ccc
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        /*border-bottom: 0px solid #eee; */
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .mobileTableView td div:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 100%;
+        font-size: 0.8em;
+    }
+    /* BRexit */
+    .brexit-table th, .brexit-table td {
+        width: 100%
+    }
+
+    #IrelandSpaceIndustryTbl tbody tr {
+        display: flex;
+        flex-direction: column;
+        width: 1024px;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+}
+/* END OF -- -- TABLES AND mobileTableView */
+
+/* START OF MERGED MEDIA QUERIES */
+/* Media Screen Declarations */
+
+/* START OF -- Mobile Only 480 */
+@media (max-width: 480px) {
+
+    /* START OF -- CSS GLOBAL FIXES */
+    .footNoteRight {
+        width: 100%
+    }
+
+    .contactDeetsSPP li {
+        display: block
+    }
+    /* International Offices Map*/
+    #internationOfficesMap {
+        display: none
+    }
+    /* Texh Gateway list */
+    .techGateList .list-group-item span {
+        width: 100%;
+    }
+    /* START OF -- STAGES 3/4 */
+    .bubble h3 {
+        margin: 0;
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    /* START OF -- Themes - Mobile  */
+    .ac-container label .fa {
+        width: 50px;
+    }
+
+    /* START OF -- SPACE LIST - SPACE DIRECTORY */
+    #spaceUlParent .spaceItem a, .spaceDirectory #spaceUlParent h3:first-of-type {
+        width: 100%
+    }
+
+    .spaceDirectory #spaceUlParent .filter-options,
+    .spaceDirectory #spaceUlParent ul {
+        width: 48%;
+    }
+
+    #spaceUlParent ul,
+    #spaceUlParent .filter-options {
+        display: inline-block;
+        width: 32%;
+        vertical-align: top;
+    }
+
+    .spaceItem {
+        max-height: none
+    }
+    /* END OF -- SPACE LIST - SPACE DIRECTORY */
+
+    /* START OF -- Sources of Equity Graph */
+    .sourcesEquityWrap .sourcesEquity .chartBar {
+        vertical-align: top;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+    }
+
+    .chartHeader h3 {
+        font-size: 0.7em
+    }
+
+    .sourcesEquity .chartBar a {
+        font-size: 0.9em
+    }
+
+    #bar5 a {
+        color: #107DA7;
+        margin-left: -220%
+    }
+
+    #bar7 a {
+        color: #106BA6;
+        margin-left: -320%
+    }
+    /* END OF -- Sources of Equity Graph */
+}
+/* END OF -- Mobile Only 480 */
+
+/* START OF --  Larger than Mobile */
+@media (min-width: 481px) {
+    /* START OF -- CSS GLOBAL FIXES */
+    /* Fix Country Flag */
+    .content .heading-flag-image {
+        width: 50%;
+        margin-bottom: 45px;
+    }
+
+    .flag-image {
+        float: right
+    }
+}
+/* END OF -- LArger than Mobile */
+
+/* START OF -- Upto Tablet Size */
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+    /* BLOCK WIDTHS */
+    .bButton {
+        width: 25%
+    }
+
+    .b33 {
+        width: 33%
+    }
+
+    .b66 {
+        width: 66%
+    }
+    /* START OF -- CSS GLOBAL FIXES */
+    /* Allow mobile images be full width for press releases */
+    .press-release-list figure {
+        min-width: 100%;
+        float: none
+    }
+
+    /* START OF -- Home Page & Banner CSS */
+    /* Center Banner and Thicken it */
+    #hp-carousel .inner section {
+        padding: 1em;
+        bottom: 0px;
+        background-color: rgba(0, 147, 208, 0.3);
+    }
+
+        #hp-carousel .inner section p {
+            display: none
+        }
+    /* END OF -- Home Page & Banner CSS */
+
+    /* Fix the Footer Area *
+	body form #content-area{background-color: #FFF}
+	body form #more-features {
+    margin: 0;
+    padding: 3em 0 1em 0;
+    background-color: #f6f6f6;
+	}*/
+
+    /* Client Jobs -- Media queries */
+    .owl-wrapper .grid figure {
+        display: inline-block;
+        position: relative; /* Remove if fails */
+        float: none;
+        margin: 10px auto;
+        width: 48%;
+    }
+
+        .owl-wrapper .grid figure:before {
+            content: "";
+            padding-top: 75%;
+            display: block;
+        }
+
+        .owl-wrapper .grid figure img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    /*	
+	.box{
+	position: relative;
+	width: 50%;		/* desired width 
+}
+.box:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1
+}
+*/
+
+
+    /* START OF -- STAGES TEMPLATE 3/4 */
+    .bigNum {
+        width: 20%;
+        color: #FFF;
+        opacity: 0.8;
+        font-size: 1.5em;
+        position: relative;
+        left: -80%;
+        padding: 0 10px;
+    }
+
+    .bStage {
+        background: #BFBDB7;
+        border-radius: 5px;
+        padding: 0;
+        margin: 3px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+    .bubble {
+        width: 80%;
+        position: relative;
+        left: 20%;
+        font-size: 1em;
+        padding-top: 10px;
+    }
+
+        .bubble .topCorner {
+            float: right;
+            padding: 10px 10px 10px 0;
+        }
+
+    .threeStage .bStage:hover,
+    .threeStage #activeStage {
+        background: #0093D0
+    }
+
+    .fourStage .bStage:hover,
+    .fourStage #activeStage {
+        background: #0093D0
+    }
+
+    .bStage:hover .bigNum,
+    #activeStage .bigNum {
+        color: #FFF
+    }
+    /* END OF -- STAGES TEMPLATE 3/4 */
+
+    /*  START OF -- Horizontal Accordion - Research Commercialisation */
+    /*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+    .stepnum {
+        display: inline-block;
+        padding-right: 60px;
+        color: rgb(193, 193, 193);
+        position: static;
+        font-size: 2.5em;
+        opacity: 0.8;
+    }
+
+    ul.resp-tabs-list {
+        display: none
+    }
+
+    h2.resp-accordion {
+        display: block
+    }
+
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #C1C1C1
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+    }
+
+    .resp-accordion-closed {
+        display: none !important
+    }
+
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1 !important
+    }
+
+    #parentHorizontalTab h2 .fa {
+        width: 100%;
+        padding: 10px
+    }
+    /*  END OF -- Horizontal Accordion - Research Commercialisation */
+
+    /* START OF -- Space Directory */
+    .horizLi.progDom li, .horizLi.techDom li {
+        min-width: 100%;
+        margin: 1px;
+        line-height: 2em;
+    }
+}
+/* END OF -- Upto Tablet Size */
+
+/* START OF -- Not Mobile, Tablet Size */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .content figure {
+        min-width: 33%
+    }
+    /* Client Jobs -- Media queries */
+    .owl-wrapper .grid figure {
+        display: inline-block;
+        float: none;
+        margin: 10px auto;
+        width: 33%;
+    }
+}
+/* END OF -- Not Mobile, Tablet Size */
+
+/* START OF -- Not Mobile, Tablet Size Portrait */
+@media only screen and (max-width: 768px) and (min-width: 481px) and (orientation : portrait) {
+    /* press-release article */
+    .press-release-list figure {
+        min-width: 100%;
+        float: none
+    }
+}
+/* END OF -- Not Mobile, Tablet Size Portrait */
+
+
+/* START OF -- iPad Portrait ONLY*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* In Portrait the Figures where taking up 90% width press-release article */
+    .press-release-list figure {
+        max-width: 33%
+    }
+    /* Client Jobs -- Media queries */
+    .owl-wrapper .grid figure {
+        display: inline-block;
+        float: none;
+        margin: 10px auto;
+        width: 33%;
+    }
+}
+/* END OF -- iPad Portrait ONLY*/
+
+/* START OF --  Large Devices and Upto Desktops */
+@media (min-width: 769px) {
+    /* BLOCK WIDTHS */
+    .sidenav {
+        width: 25%;
+        display: block;
+    }
+
+    .b75 {
+        width: 75%
+    }
+
+    .threeStage .bStage, .b33 {
+        width: 33%
+    }
+
+    .fourStage .bStage, .b25 {
+        width: 25%
+    }
+
+    .b66 {
+        width: 66%
+    }
+
+    .b33-50, .b25-50, .b50 {
+        width: 50%
+    }
+
+    .newRow {
+        width: 100%;
+        text-align: right;
+    }
+
+    /* START OF -- CSS GLOBAL FIXES */
+    /* On Enterprise Office Pages can reduce size of Map*/
+    #mapMake50 + #map-canvas {
+        width: 50%
+    }
+
+    /* START OF -- 3/4 Stage Styles */
+    .bigNum {
+        color: #BFBDB7;
+        opacity: 0.8;
+        font-size: 3em;
+    }
+
+    .bubble {
+        position: relative;
+        width: 90%;
+        height: 130px;
+        background: #BFBDB7;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        color: #FFF;
+    }
+
+        .bubble:after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 11px 18px 0;
+            border-color: #BFBDB7 transparent;
+            display: block;
+            width: 0;
+            z-index: 1;
+            margin-left: -18px;
+            bottom: -11px;
+            left: 25%;
+        }
+
+        .bubble h3 {
+            padding: 3em 10px 0 10px;
+            color: inherit;
+            word-wrap: break-word;
+            font-size: 1.1em;
+        }
+
+    .bStage .bubble .topCorner {
+        float: right;
+        margin: -1em 0 0 0;
+    }
+
+    .threeStage .bStage:hover .bubble,
+    .threeStage #activeStage .bubble {
+        background-color: #0093D0
+    }
+
+        .threeStage .bStage:hover .bubble:after,
+        .threeStage #activeStage .bubble:after {
+            border-color: #0093D0 transparent
+        }
+
+    .threeStage .bStage:hover .bigNum,
+    .threeStage #activeStage .bigNum {
+        color: #0093D0
+    }
+
+    .fourStage .bStage:hover .bubble,
+    .fourStage #activeStage .bubble {
+        background-color: #0093D0
+    }
+
+        .fourStage .bStage:hover .bubble:after,
+        .fourStage #activeStage .bubble:after {
+            border-color: #0093D0 transparent
+        }
+
+    .fourStage .bStage:hover .bigNum,
+    .fourStage #activeStage .bigNum {
+        color: #0093D0
+    }
+
+    /* START OF -- Horizontal Accordion - Research Commercialisation Styles */
+    .themesPg .b33 a {
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+
+    .ac-container label {
+        font-size: 1.5em
+    }
+
+    /* START OF --Themes Auto Rows Set Up */
+    .themes_b33 {
+        width: 33%
+    }
+
+        .themes_b33:nth-child(3n+1) {
+            clear: left
+        }
+
+    /* START OF -- Space Directory */
+    .horizLi.progDom li {
+        min-width: 20%
+    }
+
+    .horizLi.techDom li {
+        min-width: 15%
+    }
+}
+/* END OF -- Large Devices and Upto Desktops */
+
+/* START OF --  Between Tablet & Desktop */
+@media (min-width: 769px) and (max-width: 959px) {
+}
+/* END OF --  Between Tablet & Desktop */
+
+/* DESKTOP SIZE -- MEDIA QUERIES */
+@media (min-width: 960px) {
+    /* START OF -- Block Widths */
+    .b25-50 {
+        width: 25%
+    }
+
+    .b33-50 {
+        width: 33%
+    }
+
+    /* START OF -- 3/4 Stage Styles */
+    .bigNum::before {
+        content: "Step ";
+    }
+
+    .bubble h3 {
+        font-size: 1.1em
+    }
+}
+/* END OF -- DESKTOP SIZE */
+/* END OF -- MERGED MEDIA QUERIES */
+
+/* Space Directory - Animation KeyFrames */
+@keyframes removed-item-animation {
+    from {
+        opacity: 1;
+        transform: scale(1);
+        height: auto;
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+        height: 0;
+    }
+}
+
+@keyframes openspace {
+    to {
+        height: auto
+    }
+}
+
+@keyframes restored-item-animation {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes removed-item-animation {
+    from {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1)
+    }
+
+    to {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes openspace {
+    to {
+        height: auto
+    }
+}
+
+@-o-keyframes openspace {
+    to {
+        height: auto
+    }
+}
+
+@-webkit-keyframes restored-item-animation {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-o-keyframes restored-item-animation {
+    from {
+        opacity: 0;
+        -o-transform: scale(0);
+        transform: scale(0)
+    }
+
+    to {
+        opacity: 1;
+        -o-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes removed-item-animation {
+    from {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    to {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+}
+
+@-o-keyframes removed-item-animation {
+    from {
+        opacity: 1;
+        -o-transform: scale(1);
+        transform: scale(1)
+    }
+
+    to {
+        -o-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+}
+/* END OF - Space Directory Animation KeyFrames */
+
+#searchResults ul#results li.result-Item {
+    margin-bottom: 0.4em !important;
+}
+
+#searchResults.homepage-events {
+    padding-top: 0.3em !important;
+    margin-bottom: -0.4em !important;
+}
+
+    #searchResults.homepage-events ul#results .item-summary {
+        margin-bottom: 1em !important;
+        font-size: 14px !important;
+    }
+
+    #searchResults.homepage-events .item-title h3 {
+        font-size: 17px !important;
+        margin-bottom: .8em !important;
+    }
+
+    #searchResults.homepage-events ul#results .dateHolder .item-day {
+        font-size: 1.7em !important;
+    }
+
+    #searchResults.homepage-events ul#results .dateHolder .item-month {
+        font-size: 1.2em !important;
+    }
+
+    #searchResults.homepage-events ul#results .dateHolder .item-year {
+        font-size: 1em !important;
+    }
+
+    #searchResults.homepage-events .result-Item {
+        padding-bottom: 0.5em !important;
+    }
+
+
+
+#featured-video .inner {
+    padding: 13px 10px 20px 10px !important;
+}
+
+
+#hp-carousel .slides:before {
+    background-color: transparent !important;
+}
+/*
+#hp-carousel .inner section {
+    background-color: rgba(255,255,255,0.8) !important;
+}*/
+
+
+/* Tweak to Homepage Sliders on large screens */
+@media (min-width: 1300px) {
+
+    #hp-carousel .slides {
+        background: #105f80;
+    }
+
+
+    #hp-carousel .img-panel {
+        background-size: contain;
+    }
+
+    #hp-carousel .img-panel img {
+        position: relative;
+        z-index: -1;
+        visibility: visible;
+        -webkit-filter: blur(5px);
+        filter: blur(25px);
+        opacity: 0.7;
+    }
+}
+
+@media (min-width: 1300px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    #hp-carousel .img-panel img {
+        opacity: 0.15;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .toBeStyled {
+        visibility: visible !important;
+    }
+
+    #fs-form-wrap {
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,90 @@
+/* Form Switcher */ 
+#login-form, #pass-form { background:#FFF; margin:10px auto; /* margin-top:20px; */ background:#f8f8f8; overflow:hidden; border-radius:7px}
+#login-form li, #login-form ul{margin:0; padding:0; list-style:none}
+.content #login-form ul li:before{content: ""}
+.form-header{/* display:table; */ /* clear:both */}
+.form-header label{display:block; cursor:pointer; z-index:999}
+.form-header li{margin:0; line-height:60px; width:50%; text-align:center; background:#eee; font-size:18px; float:left; transition:all 600ms ease}
+
+/*sectiop*/
+.section-out{width:300%; float:left; transition:all 600ms ease}
+.section-out:after{content:''; clear:both; display:table}
+.section-out section{width:33%; float:left}
+
+#check,#check1{top:1px; position:relative}
+.remember{/* width:50%; */ /* display:inline-block; */ /* clear:both; */ font-size:14px;float: right;padding: 5px 0;}
+.remember:nth-child(2){text-align:right}
+.remember a{text-decoration:none; color:#0077D3; padding: 5px 0}
+.fogotBtn {text-align: center}
+
+.hide{display:none}
+
+/*swich form*/
+#signup:checked~.section-out{margin-left:-100%}
+#login:checked~.section-out{margin-left:0px}
+#login:checked~div .form-header li:nth-child(1),#signup:checked~div .form-header li:nth-child(2){background:#DADADA}
+
+/*form styles*/
+#signupForm, #cmLoginForm {
+	width: 100%;
+	position: relative;
+}
+#signupForm {min-height: 360px;}
+#login-form fieldset, #passForm fieldset { padding: 0 10%}
+#signupForm fieldset {/*stacking fieldsets above each other*/
+	position: absolute;
+}
+/*Hide all except first fieldset*/
+#signupForm fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+.aspInput, .regAspInput,
+#signupForm input, #cmLoginForm input,
+#passForm input, #signupForm textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 13px;
+}
+.regAspInput.phoneAreaCode{width:15%}
+.regAspInput.phoneNumber{width:65%}
+
+/*buttons*/
+#signupForm .action-button {
+	width: 100px;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+/* Validataion Styles */
+.redPass, .redPass a {
+    color: #d43f3a;
+    font-weight:700;
+}
+.validationError::before {
+    content: '\f12a';
+    font-family: FontAwesome;
+    padding-right: 3px;
+}
+.validationError  {
+    text-align:left;
+    color: #E45812;
+    font-weight:900;
+}
+
+

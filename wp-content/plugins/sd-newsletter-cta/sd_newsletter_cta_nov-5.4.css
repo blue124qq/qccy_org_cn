@@ -1,0 +1,130 @@
+.sd-newsletter-cta-nov .sd-newsletter-cta-nov-right .sd-newsletter-cta-nov-right-button-p {
+    padding-bottom: 0px;
+}
+
+.sd-newsletter-cta-nov {
+    width: 1100px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    max-width: 80%;
+}
+
+.sd-newsletter-cta-nov {
+    max-width: 80%;
+}
+
+.sd-newsletter-cta-nov.has-image {
+    min-height: 260px;
+}
+
+.sd-newsletter-cta-nov-left {
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+}
+
+.sd-newsletter-cta-nov-right {
+    background-size: cover;
+    background-position: top right;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    padding: 40px 40px;
+}
+
+.sd-newsletter-cta-nov.has-image .sd-newsletter-cta-nov-right {
+    position: absolute;
+    width: 60%;
+}
+
+.sd-newsletter-cta-nov.no-image .sd-newsletter-cta-nov-right {
+    position: relative;
+    width: 100%;
+}
+
+.sd-newsletter-cta-nov .sd-newsletter-cta-nov-right .sd-newsletter-cta-nov-right-button .start {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    text-fill-color: white !important;
+}
+
+.sd-newsletter-cta-nov .sd-newsletter-cta-nov-right .sd-newsletter-cta-nov-right-button .start:hover {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    text-fill-color: white !important;
+}
+
+.sd-newsletter-cta-nov .sd-newsletter-cta-nov-right .sd-newsletter-cta-nov-right-button .hover {
+    color: #1a1c1b !important;
+    -webkit-text-fill-color: #1a1c1b !important;
+    text-fill-color: #1a1c1b !important;
+}
+
+.sd-newsletter-cta-nov .sd-newsletter-cta-nov-right .sd-newsletter-cta-nov-right-button .hover:hover {
+    color: #1a1c1b !important;
+    -webkit-text-fill-color: #1a1c1b !important;
+    text-fill-color: #1a1c1b !important;
+}
+
+.sd-newsletter-cta-nov .sd-newsletter-cta-nov-right .sd-newsletter-cta-nov-right-button:after {
+    background-color: white !important;
+    background: white !important;
+    z-index: 1;
+}
+
+.sd-newsletter-cta-nov .sd-newsletter-cta-nov-right .sd-newsletter-cta-nov-right-button .hover {
+    top: 12px;
+    width: calc(100% - 68px) !important;
+    text-align: left;
+    left: 20px !important;
+}
+
+.sd-newsletter-cta-nov .sd-newsletter-cta-nov-right .sd-newsletter-cta-nov-right-button .hover i {
+    right: -30px !important;
+}
+
+.sd-newsletter-cta-nov .sd-newsletter-cta-nov-right .sd-newsletter-cta-nov-right-button {
+    visibility: visible;
+    display: inline-block;
+    border: 3px solid white;
+}
+
+.sd-newsletter-cta-nov .sd-newsletter-cta-nov-right .sd-newsletter-cta-nov-right-text {
+    color: white;
+    font-size: 26px;
+    line-height: 28px;
+    margin-top: 12px;
+    margin-left: 4px;
+    letter-spacing: 0.23px;
+    font-weight: 500;
+    margin-bottom: 20px
+}
+
+@media(max-width: 1200px) {
+    .sd-newsletter-cta-nov {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .sd-newsletter-cta-nov.has-image .sd-newsletter-cta-nov-left {
+        display: none;
+    }
+
+    .sd-newsletter-cta-nov.has-image .sd-newsletter-cta-nov-right {
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media all and (-ms-high-contrast: none), all and (-ms-high-contrast: active), screen {
+    .sd-newsletter-cta-nov .sd-newsletter-cta-nov-right .sd-newsletter-cta-nov-right-button.nectar-button.large.see-through-extra-color-gradient-1.has-icon.shadow-alt .start {
+        color: white !important;
+        -webkit-text-fill-color: white !important;
+        text-fill-color: white !important;
+    }
+}

@@ -1,0 +1,865 @@
+/* Designer Seed v2 Feb 2011 */
+/* 2 Column Parameterised Simple */
+/* Litmus Tested*/
+
+/* FreeMarker Section */
+
+/* Makes footer and header text black or white depending on the users choice of background colour */
+
+/* USER DEFINED SPACING */
+
+
+
+
+
+/* BORDERS ON IMAGES? */
+
+
+/* BORDER BETWEEN COLUMN */
+
+/* BORDERS ON PAGE FOR OUTLOOK 2007 */
+
+/* Page Structure and Widths*/
+
+
+/* End FreeMarker Section */
+
+
+
+/** RESETS & BROWSER BUGS **/
+/*Prevents Page Jumping with different content */
+html {
+min-height: 101%;
+}
+
+/* Removes image borders if image is a hyperlink */
+img {
+border: none;
+}
+
+/* Prevent Large Images Breaking Layout */
+table {
+/*table-layout: fixed;*/
+}
+
+/* Strip out extra spacing in articles */
+p {
+margin-top:0; padding-top:0; margin-bottom: 2px;
+}
+
+/* Reset Line Height for Hotmail */
+body, td {
+line-height: normal;
+}
+
+/* Lists for Outlook 2007 */
+ul{
+padding-left:0;
+margin-left:24px;
+list-style-position:outside;
+}
+
+ul li{
+margin-left:0;
+padding-left:0;
+}
+
+/* Fix for FF Gmail & FF Hotmail Bug - img display: block */
+.nw_img_cell img {
+display: block;
+}
+/* Spacer gif used in between fragments */
+.prop img {
+display: block;
+}
+
+table, td {
+padding: 0;
+}
+
+/* iPad/iPhone */
+body, td, table {
+-webkit-text-size-adjust: none;
+}
+
+/* **REMOVED** Removal of Trailing Break Tag in Summary and Editor for Outlook 2007 
+.summary br:last-child, .ContentBlock br:last-child {
+display: none;
+} 
+*/
+
+/** PAGE SETTINGS **/
+
+/* Page Background Colour With Lotus Fix - Separate Embedded CSS in Body Defines Background Colour for Outlook 2007 Which Ignores the Important rule*/
+body {
+/* Good browsers */
+background-color: #ECF7F9!important;
+/* For Lotus This Gets Inlined On The Body Tag */
+background-color:transparent;
+}
+
+/* Wrapper Colour */
+#wrapper {
+background-color: #ECF7F9;
+}
+
+/* Print Out Page Structure CSS Here */
+/* Space at top of newsletter */
+body {
+margin-top:1em !important;
+}
+
+/* Layout Pages */
+#CoverPage, .Generic, .ArticlePage, .SystemResponsePage {
+width: 647px;
+border-collapse: separate!important;
+background-color: #FFFFFF;
+
+}
+
+/* Segments */
+#header {
+
+width: 100%;
+}
+
+#left {
+padding: 0px;
+width: 0px;
+background-color: #FFFFFF;
+display:none;
+}
+
+#main {
+padding-bottom: 0;
+padding-top: 10px;
+width: 76%;
+padding-left: 15px;
+padding-right: 15px;
+background-color: #FFFFFF;
+
+border-right: 1px solid #CCC;
+border-left: 1px solid #CCC;
+}
+
+#right {
+padding-bottom: 0;
+padding-top: 10px;
+width: 50%;
+padding-left: 5px;
+padding-right: 15px;
+background-color: #FFFFFF;
+border-right: 1px solid #CCC;
+}
+
+#central{
+padding-bottom: 0;
+padding-top: 10px;
+width: 50%;
+border-left: 1px solid #CCC;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+#ArticlePage #central{
+width: 24%;
+}
+
+#footer {
+padding: 0;
+
+width: 100%;
+}
+
+/* Components */
+.DisplayTitle {
+width: 100%;
+}
+.nw_component_wrapper {
+width: 100%;
+}
+
+.nw-componentSpacerMainCell {
+padding-bottom: 10px;
+}
+
+.nw-componentMainCell {
+padding:0;
+background-color: transparent;
+}
+
+/* STYLES FOR LEFT BOXES */
+#left .nw-componentMainCell {
+padding: 8px;
+background-color: #FFFFFF;
+border: solid 1px #CCC;}
+
+/* STYLE OVERRIDES LEFT BOXES */
+
+#left #toc .nw-componentMainCell {
+background-color: #F0F0F0;}
+#left .Survey .nw-componentMainCell {
+}
+#left #sidearticles .nw-componentMainCell {
+}
+#left #useful .nw-componentMainCell {
+}
+#left #contact .nw-componentMainCell {
+}
+
+
+/* STYLES FOR RIGHT BOXES */
+#right .nw-componentMainCell {
+padding: 7px;
+}
+
+#central .nw-componentMainCell {
+padding: 7px;
+}
+
+#header .nw-componentSpacerMainCell {
+padding-bottom: 0;
+}
+#footer .nw-componentSpacerMainCell {
+padding-bottom: 0;
+}
+
+.SubscribeBox .nw-componentMainCell, .TellFriend .nw-componentMainCell {
+padding: 7px 0;
+}
+
+.DisplayTitle td{
+font-size:13px;font-weight:bold;
+font-style:normal;
+text-decoration:none;color: #FFFFFF;
+background-color: #AC246C;
+padding: 6px 10px;
+}
+
+/* STYLE OVERRIDES DISPLAY TITLES */
+#tocDisplayTitle td {
+background-color: #AAA219;}
+#sidearticlesDisplayTitle td {
+background-color: #A7B6B1;}
+#usefulDisplayTitle td {
+}
+#SurveyDisplayTitle td {
+}
+#contactDisplayTitle td {
+}
+#AssociatedarticlesDisplayTitle td {
+}
+
+/* STYLES FOR COMMENTS */
+div.nw-comments-displayTitle{
+font-size:13px;font-weight:bold;
+font-style:normal;
+text-decoration:none;color: #FFFFFF;
+background-color: #AC246C;
+padding: 6px 10px;
+padding-right: 0px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+div.nw-comments-comment{
+margin-bottom: 10px;
+}
+
+div.nw-comments-author, .nw-article-comments-thankyou{
+margin-top: 10px;
+margin-bottom: 5px;
+font-size:12px;color: #333333;
+font-weight: bold;
+}
+
+div.nw-comments-content{
+color: #333333;
+font-weight: normal;
+margin-bottom: 5px;
+}
+
+div.nw-comments-date{
+margin-bottom: 5px;
+font-style: italic;
+}
+			
+div.nw-comments-post{
+margin-bottom: 5px;
+}
+			
+div.nw-comments-post-form input, div.nw-comments-post-form textarea{
+margin-bottom:15px;
+margin-top:3px;
+}
+
+
+/* STYLES FOR TWITTER */
+
+#nw_TwitterFeed_wrapper{
+width: 100%;
+}
+
+.nw_twitter_feed{
+background-color: #333333;
+}
+
+.nw_twitter_feed_header a, .nw_twitter_feed_header a:hover{
+color: #FFFFFF;
+font-weight:bold;
+}
+
+.nw_twitter_feed_header_name{
+color: #3386C4;
+}
+
+.nw_twitter_content{
+background-color: #DDDDDD;
+}
+
+.nw_twitter_tweet_text {
+padding: 10px;
+padding-bottom: 0px;
+}
+
+.nw_twitter_tweet_links{	
+padding: 10px;
+padding-top: 0px;
+border-bottom: 1px dotted #333333;;
+}
+
+.nw_twitter_feed_header_image, .nw_twitter_feed_footer td{
+padding: 10px;
+}
+
+.nw_twitter_tweet a, .nw_twitter_tweet a:hover{
+color: #3386C4;
+}
+
+/*twitter padding reset */
+.nw_twitter_feed_header, .nw_twitter_feed_footer, .nw_twitter_tweet{
+padding: 0px;
+border-bottom: none;
+}
+
+
+
+
+/* Small Subscribe Box */
+input.sub_box_cover {
+margin-bottom: 5px;
+width: 120px;
+}
+
+.SubscribeBox {
+/*table-layout: fixed;*/
+}
+
+/* Footer Text */
+.ftext {
+font-size:10px;padding: 11px;
+border-top: solid 1px #CCCCCC;
+background-color: #FFFFFF;}
+
+/** TYPOGRAPHIC STYLES **/
+/* General Body Text */
+td {
+font-size:11px;color: #333333;
+font-family:Verdana, Geneva, sans-serif;}
+
+/* Links */
+a {
+color: #12537B;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+a:hover, .link:hover {
+color: #12537B;
+font-weight:normal;
+font-style:normal;
+text-decoration:underline;}
+/* Links hover in inbox version */
+a:hover {
+text-decoration:underline !important;
+}
+
+/* Article Body Text */
+.summary, .full-story {
+font-size:12px;color: #333333;
+line-height: 150%;
+}
+/* Article Titles */
+.title, .title a, .title a:hover {
+font-size:14px;font-weight:bold;
+font-style:normal;
+text-decoration:none;color: #333333;
+}
+/* Article Titles Hover */
+.title a:hover {
+font-size:14px;font-weight:bold;
+font-style:normal;
+text-decoration:none;color: #333333;
+text-decoration: underline;
+}
+
+/* Article Titles on Back Page - Not Underlined */
+.ArticleDisplay .title {
+text-decoration: none;
+font-size:14px;font-weight:bold;
+font-style:normal;
+text-decoration:none;color: #333333;
+}
+
+/* Subheads */
+.subtitle {
+font-size:11px;font-weight:normal;
+font-style:italic;
+text-decoration:none;color: #595959;
+}
+
+/*Table of Contents */
+#toc a, #toc a.link, #toc .title, #toc .title a {
+text-decoration: none;
+font-size:11px;font-weight:normal;
+font-style:normal;
+text-decoration:none;color: #333333;
+}
+#toc .title {
+/*VERY IMPORTANT to include this rule */
+/* OTHERWISE HOTMAIL & GMAIL WILL RENDER MAIN TITLE LINE-HEIGHT **/
+font-size:11px;}
+#toc a:hover, #toc a.link:hover, #toc .title a:hover {
+text-decoration: underline;
+font-size:11px;font-weight:normal;
+font-style:normal;
+text-decoration:underline;color: #333333;
+}
+
+/* Email List Styles for back page */
+#EmailList .title a {
+color: #12537B;
+font-size:11px;}
+#EmailList .title a:hover {
+color: #12537B;
+font-size:11px;}
+#EmailList .date a {
+color: #12537B;
+font-size:11px;}
+#EmailList .date a:hover {
+color: #12537B;
+font-size:11px;}
+
+.nw_readmore {
+font-size:11px;font-weight:normal;
+font-style:normal;
+text-decoration:none;color: #12537B;
+}
+.nw_readmore:hover {
+font-size:11px;font-weight:normal;
+font-style:normal;
+text-decoration:underline;color: #12537B;
+}
+
+/* Read More Spacing */
+.css_readmore_spacer_table td {
+padding-bottom: 4px;
+}
+
+/* Before & After Email and After Microsite */
+#after_text, #before_text {
+background-color: #ECF7F9;
+width: 100%;
+}
+#after_text table, #before_text table {
+width: 100%;
+}
+#before_text td, #after_text td{
+font-size:10px;color: #000000;
+text-align: center;
+}
+#before_text td{
+padding: .5em;
+}
+#after_text td{
+padding-top: 7px;
+}
+#before_text a, #after_text a {
+color: #000000;
+text-decoration: underline;
+}
+#before_text a:hover, #after_text a:hover {
+color: #000000;
+text-decoration: underline;
+}
+
+/* Images and Captions */
+
+/* Default Image Spacing in Articles */
+#header .nw_img_table {
+margin-right: 16px;
+margin-bottom: 4px;
+}
+
+#main .nw_img_table, #right .nw_img_table {
+margin-right: 16px;
+margin-bottom: 16px;
+}
+
+#main #nw_leftsection_wrapper .nw_img_table, #main #nw_rightsection_wrapper .nw_img_table {
+margin-right: 0px;
+margin-bottom: 6px;
+}
+
+#left .nw_img_table, #left .nw_img_table  {
+margin-left: 0;
+margin-bottom: 0;
+}
+
+.nw_img_wrapper {
+background-color: transparent;
+}
+.nw_img_cell {
+padding:0;
+border: solid 3px #C0CACC;
+}
+
+/* Caption Cell Styling */
+.nw_img_caption {
+font-family: Verdana;
+font-size:10px;font-style: italic;
+padding: 7px;
+}
+
+/* CSS FOR FRAGMENTS */
+/* Spacer Table after article titles */
+.css_spacer_table td {
+padding-bottom: 4px;
+}
+/* Spacer Table Between Articles */
+.css_between_articles td, .css_after_sections td {
+padding-bottom: 8px;
+}
+
+.css_between_toc td {
+padding-bottom: 1px;
+}
+
+.css_divider {
+border-bottom: solid 1px #CCCCCC;
+}
+
+/* Spacer Table Between Articles TOC */
+#left .css_between_articles td {
+padding-bottom: 4px;
+}
+
+/* Important - Images will clear */
+.css_between_articles, .css_after_sections {
+clear: both;
+}
+#coverlink a, #coverlink a:hover {
+font-weight: bold;
+}
+.nw_coverlink2 {
+text-align: right;
+}
+
+#coverlink .nw-componentMainCell {
+padding-bottom: 7px;
+border-bottom: dotted 1px #CCCCCC;
+}
+
+/* RELATED STORIES COMPONENT */
+.nw-associatedarticle-title a, .nw-associatedarticle-title a:hover {
+font-weight: bold;
+}
+.nw-associatedarticle-title {
+display: block;
+margin-bottom: .4em;
+}
+
+.nw-associatedarticle-summary {
+margin: .2em 0 .5em 0;
+padding-bottom: .2em;
+border-bottom: solid 1px #CCC;
+}
+
+/* SEARCH BOX */
+#SearchBox form {
+margin-top: 1em;
+}
+input#query{
+background: #E3F2F9;
+margin: 0;
+border: 1px inset #999;
+margin-right: .5em;
+float: left;
+height: 1.2em;
+}
+#SearchBox a {
+height: 1.2em;
+float: left;
+margin: 0;
+padding:0;
+border: 1px inset #999;
+background: #EEEEEE;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+color: #333;
+font-weight: bold;
+font-size: 10px;
+font-family: Tahoma, Geneva, Verdana;
+text-decoration: none;
+cursor:pointer;
+}
+#SearchBox a:hover {
+text-decoration: none!important;
+background: #FFFFFF !important;
+}
+/* SEARCH RESULTS PAGE */
+div.nw-search-results h1{
+font-size:13px;}
+div.nw-search-results h3, div.nw-search-results h3 a {
+font-size:14px;font-weight:bold;
+font-style:normal;
+text-decoration:none;color: #333333;
+}
+/* Styles for Form Elements in Sidebar */
+#left input.nw-text,  #left option, #left select {
+width: 120px;
+}
+.nw_submit, .nw-subscribebox-form {
+margin: 0;
+padding: 0;
+}
+
+/* Article Options (Sharing etc.)*/
+.ArticlePage .nw-article-options {
+padding: 7px 0;
+border-bottom: dotted 1px #CCCCCC;
+border-top: dotted 1px #CCCCCC;
+}
+
+#CoverPage .nw-article-options {
+margin-top: 10px;
+}
+
+.nw-article-options {
+font-size:11px;;
+color: #666666;
+}
+
+.nw-article-options a {
+font-size:11px;;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;color: #12537B;
+
+}
+.nw-article-options a:hover {
+font-size:11px;;
+font-weight:normal;
+font-style:normal;
+text-decoration:underline;color: #12537B;
+}
+
+
+/* Print All Page */
+#printall .nw_summary_wrapper {
+margin-bottom: 1em;
+}
+
+#printall .summary{
+/*font-size:10px;*/
+font-style: italic;
+}
+
+#PrintAllPage #left, #PrintAllPage #right {
+display: none;
+}
+
+#PrintAllPage #main .DisplayTitle {
+width: 98%;
+margin: 0 auto;
+margin-bottom: .8em;
+}
+#PrintAllPage #main .nw_component_wrapper {
+width: 98%;
+margin: 0 auto;
+}
+
+#PrintAllPage #main {
+padding-left: .5em;
+padding-right: .5em;
+}
+
+/* Masthead Block Styles */
+#header .nw-componentSpacerMainCell {
+padding-bottom: 0;
+}
+
+#masthead, #header {
+background-color: #ECF7F9;
+}
+
+.nw_date_title {
+padding: 0px 0px 5px ;
+font-size:11px;font-weight:normal;
+font-style:normal;
+text-decoration:none;color: #12537B;
+background-color: #ECF7F9;
+}
+
+/* Tell a Friend and Subscribe Box */
+#main label {
+font-weight: bold;
+}
+
+/* Styles for sidebar articles in a 3 col layout */
+#right .title, #right .title a, #right .title:hover {
+}
+
+#right .summary, #right .full-story {
+}
+
+#right .nw_readmore, #right .nw_readmore:hover {
+}
+
+/* Feature Story if Using */
+
+#featurestory .title, #featurestory .title a, #featurestory .title a:hover {
+font-size:20px;color: #2296E1;
+font-weight: normal;
+}
+#featurestory .summary, #featurestory .nw_readmore, #featurestory .nw_readmore:hover {
+font-size:12px;}
+
+#featurestory .nw-componentMainCell {
+padding: 12px 22px;
+background-color: #FFFFFF;
+border-left: solid 1px #CCC; border-right: solid 1px #CCC;}
+
+/* Side Articles if Using */
+#sidearticles .title, #sidearticles .title a, #sidearticles .title a:hover {
+font-size:11px;color: #333333;
+font-weight: normal;
+}
+#sidearticles .summary, #sidearticles .nw_readmore, #sidearticles .nw_readmore:hover {
+font-size:11px;font-weight: normal;
+}
+#sidearticles .nw-componentMainCell {
+}
+
+
+
+/* Navigation Bar/Footer Links */
+.nw_navs {
+padding: 7px;
+padding-left: 10px; background-color: #12537B; font-size: 12px;color: #FFFFFF;
+}
+
+.nw_navs a, .nw_navs a:hover {
+color: #FFFFFF;
+}
+
+/* Articles in Boxes */
+.article_wrap {
+padding: 16px;
+border: solid 1px #CCC;
+}
+
+/* Normal Articles */
+
+#articles .nw-componentMainCell {
+}
+
+/* Print-friendly Styles */
+@media print {
+}
+
+/* Uncomment to put each article on a separate page when printed
+#printall .css_between_articles {
+page-break-before: always;
+}
+*/
+
+.follow_us{
+text-align:right;
+color: #11537B;
+padding-top: 3px;
+padding-right: 5px;
+}
+
+.web_address a{
+font-size: 13px;
+font-weight: bold;
+color: #11537B;
+}
+
+.web_address{
+padding-top: 15px;
+padding-bottom: 20px;
+}
+
+/* Section Styles */
+.css_nice_sections td{
+font-size:13px;font-weight:bold;
+font-style:normal;
+text-decoration:none;color: #FFFFFF;
+background-color: #BBB1A5;
+padding: 6px 10px;
+}
+div div.section-name {
+font-weight:bold;
+font-style:normal;
+text-decoration:none;}
+
+.PinkSection .css_nice_sections td{
+background-color: #AC246C;
+}
+
+.BlueSection .css_nice_sections td{
+background-color: #93D5F7;
+}
+
+
+.GreyGreenSection .css_nice_sections td{
+background-color: #ABB183;
+}
+
+.YellowSection .css_nice_sections td{
+background-color: #FBB021;
+}
+
+.OrangeSection .css_nice_sections td{
+background-color: #EE6D29;
+}
+
+#nw_rightsection_wrapper{
+width: 48%;
+}
+
+#nw_leftsection_wrapper{
+width: 48%;
+}
+
+#nw_leftsection_wrapper .nw-componentSpacerMainCell{
+width: 50%;
+padding-right: 15px;
+}
+
+#SectionsList .section, #SectionsList .section a{
+font-size: 13px;
+color: #333333;
+}
+
+#right #ArticleDisplay .nw-componentMainCell{
+padding-top: 0px;
+}
+
+
+#titlebar .nw-componentMainCell{
+border-left: 1px solid #CCCCCC;
+border-right: 1px solid #CCCCCC;
+}

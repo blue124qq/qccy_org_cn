@@ -1,0 +1,21 @@
+ html, body {height: auto;}
+#info-top,#edit-mode-panel { display: none; }
+.EditModeContainer,.header-icons ,.accessibility-options .float-right,.info-bubbles,.print-hidden,.header-info-search,.social-media{ display: none; }
+#main-content { background: none; }
+.lower-content-inner { background: url("../../images/structural/Print/bg-lower-content-top-print.gif") top no-repeat; }
+#footer {  background: none; } 
+.header-info-contact { padding: 50px 0 0 0; }
+#left-panel,#right-panel{float:none;width:100% !important;}
+#global-header{margin-bottom:15px;border-bottom:2px solid #0093d0;padding-bottom:15px;}
+.container,.lower-key-contact-bottom {
+width:100%;
+}
+body {
+ font-size:120%;
+
+}
+.flag-image{position:absolute;right:0;top:0;}
+#map-canvas,#heiMap,#map {
+ width:100% !important;
+}
+

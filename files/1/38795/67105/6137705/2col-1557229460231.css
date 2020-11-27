@@ -1,0 +1,1831 @@
+/* Newsweaver Newsletter CSS */
+
+
+
+img {
+border: none;
+}
+
+/* Strip out extra spacing in articles */
+p {
+margin:0;
+padding:0;
+}
+
+/* Back Pages only */
+.Generic .nw_fullstory_wrapper, .ArticlePage .nw_fullstory_wrapper {
+padding-bottom: 10px;
+}
+
+/* List Styles - margin for Outlook 2007/2010 */
+ul, ol {
+margin-left: 24px;
+padding-left: 0 ;
+list-style-position:outside ;
+/* uncomment for lists overflowing image 
+overflow: hidden; */
+}
+
+/* Flash Video */
+.summary iframe, .full-story iframe {
+margin-bottom:10px;
+}
+
+/* Yahoo Blue Links */
+.yshortcuts, .yshortcuts a span { 
+
+
+color: #2599DB;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+/* Fix for FF Gmail & FF Hotmail Bug */
+.nw_img_cell img, .after_article_title_fragment img, 
+.between_article_fragment img, .after_sections_fragment img, 
+.read_more_spacer img, .between_article_fragment img, 
+.between_toc_article_fragment img, .between_links_fragment img,
+.after_section_title_fragment img{
+display: block;
+}
+
+/* Fix for Outlook 2013 table space bug */
+.after_article_title_fragment td, .between_article_fragment td, 
+.between_toc_article_fragment td, .after_sections_fragment td, 
+.read_more_spacer td, .nw_img_table td,  .between_links_fragment td,
+.between_three_col_rows_fragment td, .between_two_col_rows_fragment td,
+.after_section_title_fragment td{
+line-height: 1px;
+}
+
+
+
+body {
+background-color: #F1F1F1;
+}
+
+#wrapper {
+background-color: #F1F1F1;
+padding-top:1em;
+}
+
+
+#CoverPage, .Generic, .ArticlePage, .SystemResponsePage {
+width: 710px;
+background-color: #FFFFFF;
+margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+#header {
+width: 100%;
+padding: 0;
+}
+
+#central {
+padding-bottom: 0;
+width: 50%;
+padding-left: 10px;
+padding-right: 10px;
+background-color: #FFFFFF;
+}
+
+#footer {
+padding: 0;
+width: 100%;
+}
+
+	
+#main{
+width: 100%;
+padding-left: 20px;
+padding-right: 20px;
+background-color: #FFFFFF;
+}
+
+
+
+
+#CoverPage #main , .ArticlePage #main, #SectionPage #main{
+padding-bottom: 0;
+width: 69%;
+padding-left: 20px;
+padding-right: 20px;
+background-color: ;
+}
+
+#CoverPage #left , .ArticlePage #left, #SectionPage #left {
+padding-bottom: 0;
+width: 31%;
+padding-left: 20px;
+padding-right: 0;
+background-color: #FFFFFF;
+ border-right: none;
+}
+
+#CoverPage #right  , .ArticlePage #right, #SectionPage #right {
+padding-bottom: 0;
+width: 25%;
+padding-left: 10px;
+padding-right: 10px;
+background-color: #FFFFFF;
+ border-left: none;
+}
+
+
+
+td {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+a {
+
+
+color: #2599DB;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+a:hover, .link:hover {
+
+
+color: #2599DB;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;font-weight:normal;
+font-style:normal;
+text-decoration:underline;/* Links hover in inbox version */
+text-decoration:underline !important;
+}
+
+
+
+.nw_component_wrapper {
+width: 100%;
+}
+
+.nw-componentSpacerMainCell {
+padding-bottom: 20px;
+}
+
+#header .nw-componentSpacerMainCell{
+padding-bottom: 0px;
+}
+
+#footer .nw-componentSpacerMainCell{
+padding-bottom: 0px;
+}
+
+.nw-componentMainCell {
+padding:0;
+background-color: transparent;
+}
+
+
+
+#masthead td, #mastheadeditable td{
+background-color: #FFFFFF;
+}
+
+.main_title {
+
+font-size:24px;
+
+font-weight:normal;
+font-style:normal;
+text-decoration:none;text-align:right;}
+
+#masthead img{
+display:block;
+}
+
+
+
+#titlebar .nw-componentMainCell {
+background-color: #E77200;
+padding: 10px 15px;
+text-align: right;}
+
+#titlebar .nw-componentMainCell,
+#titlebar .nw-componentMainCell td{
+
+font-size:13px;
+color: #FFFFFF;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+#titlebar .nw-componentMainCell a, 
+#titlebar .nw-componentMainCell a:hover {
+color: #FFFFFF;}
+
+
+
+#left .nw-componentMainCell, 
+#right .nw-componentMainCell {
+padding: 15px 0;
+background-color: #FFFFFF;
+}
+
+.Generic #main .nw-componentMainCell, 
+.SystemResponsePage #main .nw-componentMainCell{
+border:none;
+padding:0;
+background-color: transparent;
+}
+
+
+
+
+.DisplayTitle {
+width: 100%;
+}
+
+.DisplayTitle td{
+
+font-size:15px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;background-color: #009DE0;
+padding: 8px 12px;
+}
+
+/* Overrides for Main Col eg Survey etc */
+#main .DisplayTitle td, #main .nw-system-response-heading {
+}
+
+
+
+#toc .nw-componentMainCell {
+border-top: 1px solid #009EDD;}
+
+#tocDisplayTitle td {
+}
+
+#toc a, #toc a.link, #toc .title, #toc .title a {
+text-decoration: none;
+
+font-size:12px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+#toc a:hover, #toc a.link:hover, #toc .title a:hover {
+font-weight:normal;
+font-style:normal;
+text-decoration:underline;}
+
+/* Table of Contents Spacing & Dividers */
+.between_toc_article_fragment td {
+padding-bottom: 8px;
+}
+
+.between_toc_article_fragment .divider_line {
+border-bottom: none;
+}
+
+/* Table of Contents Sections */
+.toc_section_header .section-name {  
+
+font-size:15px;
+color: #E97200;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;}
+
+#toc .nw_section_title_table td{
+padding-bottom:4px;
+}
+
+
+
+#useful .nw-componentMainCell {
+
+
+color: #2599DB;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+#usefulDisplayTitle td {
+}
+
+#useful a, #useful a:hover {
+
+
+color: #2599DB;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+/* Useful Links Spacing & Dividers */
+.between_links_fragment td {
+padding-bottom: 8px;
+}
+
+.between_links_fragment td.divider_line {
+border-bottom: solid 1px #CCCCCC;
+}
+
+
+#contact .nw-componentMainCell {
+}
+
+#contactDisplayTitle td {
+}
+
+
+
+#introtext .nw-componentMainCell {
+
+
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;padding: 5px 0;}
+
+
+
+#featurearticle .nw-componentMainCell,
+#featurearticle2 .nw-componentMainCell{
+padding: 15px 0 0 0;
+background-color: #C1DEEB;
+}
+
+#featurearticle .title, #featurearticle .title a, 
+#featurearticle .title a:hover,
+#featurearticle2 .title, #featurearticle2 .title a, 
+#featurearticle2 .title a:hover{
+
+font-size:17px;
+color: #333333;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;}
+
+#featurearticle .summary,
+#featurearticle2 .summary{
+
+font-size:13px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+#featurearticle .nw_readmore, #featurearticle .nw_readmore:hover,
+#featurearticle2 .nw_readmore, #featurearticle2 .nw_readmore:hover{
+
+font-size:13px;
+color: #2599DB;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;}
+
+#featurearticle .summary a, #featurearticle .full-story a,
+#featurearticle2 .summary a, #featurearticle2 .full-story a{
+color: #2599DB;
+}
+
+
+
+
+.title, .title a,  .title a.link {
+
+font-size:17px;
+color: #333333;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;}
+
+.title a:hover,  .title a.link:hover {
+text-decoration: underline;
+}
+
+/* Article Titles on Back Page - Not Underlined */
+.ArticleDisplay .title {
+text-decoration: none;
+}
+
+.subtitle {
+
+font-size:11px;
+color: #666666;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+.summary, .full-story {
+
+font-size:13px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+.author{
+
+font-size:11px;
+color: #333333;
+font-weight:normal;
+font-style:italic;
+text-decoration:none;}
+
+
+#left #sidearticles .nw-componentMainCell, 
+#right #sidearticles .nw-componentMainCell{
+    padding: 0;
+}
+
+#left #sidearticles .nw-componentMainCell{
+background-color: #009DE0;}
+
+#sidearticles .article_wrapper{
+padding: ;    
+}
+
+#sidearticles .section_header {
+}
+
+#sidearticles .section-name{
+
+font-size:14px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;}
+
+#sidearticles .title, #sidearticles .title a, 
+#sidearticles .title a:hover {
+font-family:Arial, Helvetica, sans-serif;
+font-size:13px;
+color: #FFFFFF;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+#sidearticles .summary {
+
+font-size:11px;
+color: #FFFFFF;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+#sidearticles .nw_readmore, #sidearticles .nw_readmore:hover {
+
+font-size:11px;
+color: #2599DB;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+
+
+.nw_readmore {
+
+font-size:13px;
+color: #2599DB;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;
+}
+
+.nw_readmore:hover {
+font-weight:normal;
+font-style:normal;
+text-decoration:underline;
+font-size:13px;
+color: #2599DB;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;}
+
+.read_more_spacer td {
+padding-bottom: 20px;
+}
+
+
+.ArticlePage .nw-article-options {
+padding: 10px 0;
+border-bottom: dotted 1px #CCCCCC;
+border-top: dotted 1px #CCCCCC;
+/* clear article images when content is short */
+clear:both;
+}
+
+.ArticleSummary .nw-article-options {
+margin-top: 15px;
+}
+
+.nw-article-options {
+
+font-size:11px;
+color: #666666;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+.nw-article-options a {
+
+font-size:11px;
+color: #666666;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+.nw-article-options a:hover {
+font-weight:normal;
+font-style:normal;
+text-decoration:underline;
+font-size:11px;
+color: #666666;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+
+
+#header .nw_img_main_cell, 
+#footer .nw_img_main_cell, 
+#main .nw_img_main_cell {
+padding: 0 0 10px 15px;
+}
+
+#header #featurearticle .nw_img_main_cell, 
+#footer #featurearticle .nw_img_main_cell, 
+#main #featurearticle .nw_img_main_cell, 
+#main #featurearticle2 .nw_img_main_cell, 
+#featurearticle .nw_img_main_cell,
+#featurearticle2 .nw_img_main_cell{
+padding: 0 0 10px 15px;
+}
+
+#left .nw_img_main_cell, 
+#right .nw_img_main_cell {
+padding: 0 0 10px 0;
+}
+
+#main .ArticleDisplay .nw_img_main_cell, 
+#left .ArticleDisplay .nw_img_main_cell{
+padding: 0 0 10px 15px; 
+}
+
+.nw_img_wrapper {
+background-color: transparent;
+}
+
+.nw_img_cell {
+padding:0;
+}
+
+.nw_img_table td.nw_img_caption{
+line-height: normal;
+text-align:left;
+}
+
+/* Fix image alignment problem on Safari and iOS8 */
+.nw_img_wrapper{
+    max-width:none !important;
+}
+
+
+
+
+#associatedarticles .nw-componentMainCell {
+}
+
+#associatedarticlesDisplayTitle td {
+}
+
+.nw-associatedarticle-title a, .nw-associatedarticle-title a:hover {
+font-weight: bold;
+}
+
+.nw-associatedarticle-summary {
+margin-top: 10px;
+}
+
+.ArticleDisplay .nw-associatedarticles-header {
+
+font-size:15px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;background-color: #009DE0;
+padding: 8px 12px;
+padding-right: 0;
+margin-top: 10px;
+margin-bottom: 10px;
+/* clear article images when content is short */
+clear:both;
+}
+
+.ArticleDisplay .nw-associatedarticles{
+border:none;
+padding: 0;
+border-bottom: 1px solid #CCCCCC;
+padding-bottom: 10px;
+/* clear article images when content is short */
+clear:both;
+
+}
+
+
+
+/* For flush images on 2/3 col boxes */
+.twocolumnarticles .article_wrapper,
+.threecolumnarticles .article_wrapper,
+.fourcolumnarticles .article_wrapper{
+    background-color: #F0F0F0;
+}
+
+.twocolumnarticles .content_wrapper,
+.threecolumnarticles .content_wrapper,
+.fourcolumnarticles .content_wrapper{
+    background-color: #F0F0F0;
+    padding: 10px;
+}
+
+.twocolumnarticles .article_wrapper {
+width: 50%;
+}
+
+.threecolumnarticles .article_wrapper {
+width: 33%;
+}
+
+.fourcolumnarticles .article_wrapper {
+width: 25%;
+}
+/* ============================ */
+
+
+/* 2COL Spacing between columns */
+.twocolumnarticles .article_spacer, 
+.between_two_col_rows_fragment .article_spacer{
+padding-right: 20px;
+width:3%;
+}
+
+.between_two_col_rows_fragment td{
+padding-bottom: 10px;
+}
+
+.between_two_col_rows_fragment .divider_line {
+/* Override default divider line styles */
+}
+
+
+/* 3 COL Spacing between columns */
+.threecolumnarticles .article_spacer, 
+.between_three_col_rows_fragment .article_spacer{
+padding-right: 20px;
+width:3%;
+}
+
+.between_three_col_rows_fragment td{
+padding-bottom: 10px;
+}
+
+.between_three_col_rows_fragment .divider_line {
+/* Override default divider line styles */
+}
+
+
+
+/* 4 COL Spacing between columns */
+.fourcolumnarticles .article_spacer, 
+.between_four_col_rows_fragment .article_spacer{
+padding-right: 20px;
+width:2%;
+}
+
+.between_four_col_rows_fragment td{
+padding-bottom: 10px;
+}
+
+.between_four_col_rows_fragment .divider_line {
+/* Override default divider line styles */
+}
+
+#main .twocolumnarticles .nw_img_main_cell,
+#main .threecolumnarticles .nw_img_main_cell,
+#main .fourcolumnarticles .nw_img_main_cell{
+padding-left: 0;
+padding-right: 0;
+padding-bottom: 0;
+}
+
+/* Wrapper around title, summary and read more of article*/
+.content_wrapper{
+    padding-top: 10px;
+}
+
+
+
+
+.section_header, .ArticleDisplay .section-name, 
+#PrintAllPage .section-name, 
+#sectiontochorizontal .section-wrapper{
+
+font-size:17px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;background-color: #009EDD;
+padding: 6px 14px;
+}
+
+div div.section-name {
+
+font-size:17px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;}
+
+
+#sectiontoc .nw-componentMainCell{
+border-top: 1px solid #009EDD;}
+
+#sectiontoc a {
+
+font-size:12px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+#sectiontoc a:hover {
+font-weight:normal;
+font-style:normal;
+text-decoration:underline;}
+
+#sectiontocDisplayTitle td {
+}
+
+#sectiontochorizontal .section-wrapper a{
+
+font-size:17px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;}
+
+#sectiontochorizontal .section-wrapper{
+text-align:center;
+}
+
+.after_sections_fragment td{
+/* Uncomment for more space between sections 
+padding-bottom:16px;
+*/
+}
+
+
+
+.nw-article-comments-show-div{
+background-color: transparent;
+/* clear article images when content is short */
+clear:both;
+}
+
+div.nw-comments-displayTitle, #CommentsPostDisplayTitle{
+
+font-size:15px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;background-color: #009DE0;
+padding: 8px 12px;
+margin-top: 10px;
+margin-bottom: 10px;
+width: 98%;
+}
+
+div.nw-comments-comment{
+margin-bottom: 10px;
+}
+
+div.nw-comments-author, .nw-article-comments-thankyou{
+margin-top: 10px;
+margin-bottom: 5px;
+
+font-size:13px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;font-weight: bold;
+}
+
+div.nw-comments-content{
+
+font-size:13px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;font-weight: normal;
+margin-bottom: 5px;
+}
+
+div.nw-comments-date{
+margin-bottom: 5px;
+font-style: italic;
+}
+			
+div.nw-comments-post{
+margin-bottom: 5px;
+}
+			
+div.nw-comments-post-form input, div.nw-comments-post-form textarea{
+margin-bottom:15px;
+margin-top:3px;
+}
+
+div.nw-comments-post-form textarea{
+max-width: 320px;
+}
+
+
+
+/* Space after article titles */
+.after_article_title_fragment td {
+padding-bottom: 8px;
+}
+
+/* Space Between Articles */
+.between_article_fragment td{
+padding-bottom: 16px;
+}
+
+/* Space After Section Titles */
+.after_section_title_fragment td{
+padding-bottom: 16px;
+}
+
+/* Space Between Sections */
+.between_sections_fragment td{
+padding-bottom: 16px;
+}
+
+
+.between_article_fragment{
+clear: both;
+}
+
+.divider_line {
+border-bottom: solid 1px #CCCCCC;
+}
+
+
+
+#footer {
+background-color: #F1F1F1;
+padding: ;
+}
+
+
+#usefulhorizontal .nw-componentMainCell,
+#usefulhorizontal .nw-componentMainCell td{
+
+
+color: #2599DB;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+#usefulhorizontal .nw-componentMainCell a, 
+#usefulhorizontal .nw-componentMainCell a:hover,
+#usefulhorizontal .nw-componentMainCell td a, 
+#usefulhorizontal .nw-componentMainCell td a:hover{
+
+
+color: #2599DB;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+
+#footertext .nw-componentMainCell{
+text-align: center; padding: 0 20px 20px 20px;}
+
+#footertext .nw-componentMainCell, 
+#footertext .nw-componentMainCell td {
+
+font-size:12px;
+color: #666666;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+#footertext .nw-componentMainCell a, 
+#footertext .nw-componentMainCell a:hover,
+#footertext .nw-componentMainCell td a, 
+#footertext .nw-componentMainCell td a:hover{
+}
+
+
+
+
+
+#socialsharing .nw-componentMainCell{
+    background-color: #FFFFFF;
+}
+
+#socialsharing table{
+width: 100%; 
+}
+ 
+#socialsharing table td{
+width: 20%; 
+padding: 10px 0 10px 40px;
+}
+
+
+
+#coverlink a, #coverlink a:hover {
+
+font-size:13px;
+color: #2599DB;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;;
+}
+
+#ArticlePage #coverlink .nw-componentMainCell,
+#SectionPage #coverlink .nw-componentMainCell{
+padding: 0 0 10px 0 !important;
+border-bottom: dotted 1px #CCCCCC !important;
+}
+
+#coverlink .nw-componentMainCell {
+padding: 10px 0 !important;
+border-bottom: dotted 1px #CCCCCC !important;
+}
+
+
+
+#before_text a, #after_text a {
+color: #000001;
+text-decoration: underline;
+}
+
+#before_text a:hover, #after_text a:hover {
+text-decoration: none;
+}
+
+#before_text{
+width: 100%;
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+#inner_before_text{
+padding: 0;
+}
+
+#before_text .before_text_wrapper {
+background-color: #F1F1F1;
+width: 100%;
+}
+
+#before_text .before_text_wrapper td{
+font-size:11px;color: #000001;
+text-align: center;
+padding: 4px 0;
+}
+
+
+
+
+
+#after_text {
+background-color: #F1F1F1;
+width: 100%;
+}
+
+#after_text td{
+font-size:11px;color: #000001;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+
+
+
+
+.EmailList .title a, .EmailList .title a:hover {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;
+
+color: #2599DB;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+ 
+.EmailList .date a, .EmailList .date a:hover {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+#emaillistDisplayTitle td{
+background-color: transparent;
+padding-left: 0;
+padding-bottom:16px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;font-weight: bold;
+}
+
+
+
+.SearchBox form {
+margin-top: 1em;
+}
+
+input#query{
+margin: 0;
+margin-right: .5em;
+float: left;
+padding: 3px;
+}
+
+
+
+.nw-search-results h1{
+
+font-size:15px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;background-color: #009DE0;
+padding: 8px 12px;
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+div.nw-search-results h3, div.nw-search-results h3 a {
+
+font-size:15px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;}
+
+div.nw-search-results h3{
+border-bottom: 1px solid #CCCCCC;
+display: block;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+
+
+
+#PrintAllPage .summary{
+font-style: italic;
+}
+
+#PrintAllPage #main .DisplayTitle {
+margin-bottom: 10px;
+}
+
+#PrintAllPage .nw_img_main_cell{
+padding-left:0;
+padding-right:12px;
+}
+
+#PrintAllPage .summary br, #PrintAllPage .nw_summary_wrapper br{
+display:none;
+}
+
+#PrintAllPage .summary{
+padding-bottom: 10px;
+display:block;
+}
+
+
+
+.TellFriend .nw-text, .TellFriend .nw-textarea{
+margin-bottom: 10px;
+margin-top: 5px;
+padding: 4px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;width: 95%;
+}
+
+.TellFriend .nw-componentMainCell {
+padding: 20px 0 10px 0 !important;
+}
+
+.nw-tellfriend-form label{
+font-weight: bold;
+}
+
+
+
+.nw-form td.nw-form-display-title{
+
+font-size:15px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;font-weight: normal;
+background-color: #009DE0;
+padding: 8px 12px;
+}
+
+.nw-form-display-title h3{
+
+font-size:15px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;font-weight: normal;
+margin:0;
+padding: 0;
+}
+
+.nw-form td.nw-form-introduction{
+padding: 15px 0;
+}
+
+.nw-form legend {
+font-size: 13px !important;
+background-color: #DDDDDD;
+border: 1px solid #CCCCCC;
+color: #333333;
+margin-left: 0 !important;
+padding: 5px 8px !important;
+}
+
+.nw-form fieldset{
+background-color: #FAFAFA !important;
+border: 1px solid #DDDDDD !important;
+}
+
+
+
+/* Applies to Archive Search, Send to a friend, 
+Subscribe & Update Profile */
+.SearchBox a, .nw-search-results form a, 
+.nw-tellfriend-form .nw-submit, 
+.SignUpFormDisplay input[type=submit], 
+.nw-survey-pagebreak-button, .nw-survey-submit{
+display: inline-block;
+outline: none;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+padding: 5px 10px;
+text-shadow: 0 1px 1px rgba(0,0,0,.3);
+-webkit-border-radius: .3em; 
+-moz-border-radius: .3em;
+border-radius: .3em;
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+box-shadow: 0 1px 2px rgba(0,0,0,.2);	
+background: #707B87; 
+background: -moz-linear-gradient(top,  #707B87 0%, #566371 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#707B87), color-stop(100%,#566371)); 
+background: -webkit-linear-gradient(top,  #707B87 0%,#566371 100%); 
+background: -o-linear-gradient(top,  #707B87 0%,#566371 100%); 
+background: -ms-linear-gradient(top,  #707B87 0%,#566371 100%);
+background: linear-gradient(to bottom,  #707B87 0%,#566371 100%); 
+border: 1px solid #566371;
+color: #FFFFFF;
+}
+
+.SearchBox a:hover, .nw-tellfriend-form .nw-submit:hover,  
+.SignUpFormDisplay input[type=submit]:hover {
+text-decoration: none;
+background: #566371;
+}
+
+.nw-tellfriend-form .nw-submit, 
+.SignUpFormDisplay input[type=submit]{
+font-size: 14px;
+}
+
+
+
+.nw-system-response-heading{
+
+font-size:15px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;background-color: #009DE0;
+padding: 8px 12px;
+}
+
+
+
+#surveycoverpageDisplayTitle td {
+}
+
+#surveycoverpage .nw-componentMainCell{
+}
+
+/* Link to survey in inbox */
+a.nw-survey-full-link{
+
+font-size:15px;
+
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+/* Answer link in inbox  */
+a.nw-survey-answer-link{
+
+font-size:14px;
+
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+
+
+/* Survey questions on cover page & back page */
+.nw-survey-question-title{
+
+font-size:14px;
+
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+div.nw-survey-question{
+	margin-bottom: 20px;
+}
+
+.nw_survey_option{
+color: #000000
+}
+
+input.nw-survey-text, textarea.nw-survey-textarea {
+	margin-bottom: 10px;
+	margin-top: 5px;
+	padding: 4px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;	width: 95%;
+}
+
+
+/* Survey on back pages */
+.Generic .Survey .nw-componentMainCell, 
+.nw-system-response-survey{
+    padding: 10px;
+}
+
+/* Boundry around questions */
+.Generic .Survey .nw-survey-question, 
+.nw-system-response-survey .nw-survey-question,
+.nw-survey-results{ 
+	border: 1px solid #EEEEEE;
+	padding: 20px;
+}
+
+.nw-survey-results{
+	margin-bottom: 20px;
+}
+
+.nw-survey-results-table td{
+	padding: 8px 12px;
+	border-bottom: 1px solid #FFFFFF;
+	background-color: #F1F1F1;
+}
+
+/* Targets results link */
+.nw-survey-results-link a{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color: #333333;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;
+
+color: #2599DB;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;}
+
+/* Required fields messages */
+.nw-survey-validation-error,
+.nw-survey-required-label{
+	margin-bottom:10px;
+}
+
+.nw-survey-results-link{
+	padding-top: 15px;
+}
+
+/* Thank you message when survey completed */
+.nw-survey-thankyou{
+	margin-bottom: 10px
+}
+
+
+.Generic .Survey .nw-survey-pagebreak-button, 
+.Generic .Survey .nw-survey-submit,
+.nw-system-response-survey .nw-survey-pagebreak-button, 
+.nw-system-response-survey .nw-survey-submit{
+	font-size: 14px;	
+}
+
+/* Survey display title on System Response Page */
+#SystemResponsePage .DisplayTitle{
+
+font-size:15px;
+color: #FFFFFF;
+font-weight:bold;
+font-style:normal;
+text-decoration:none;	background-color: #009DE0;
+	padding: 8px 12px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+
+
+.nw_articleGallery_wrapper{
+background-color: #CCCCCC;
+/* clear article images when content is short */
+clear:both;
+}
+
+.nw_articleGallery_image img{
+max-width: 400px;
+}
+
+.nw_articleGallery_caption{
+color: #333333;
+}
+
+
+
+/*twitter padding reset */
+.nw_twitter_feed_header, .nw_twitter_feed_footer, .nw_twitter_tweet{
+padding: 0;
+border-bottom: none;
+}
+
+/* twitter side column padding reset */
+#left .TwitterFeed .nw-componentMainCell, 
+#right .TwitterFeed .nw-componentMainCell{
+padding:0;
+}
+
+.nw_twitter_feed{
+background-color: #CCCCCC;
+}
+
+.nw_twitter_feed_header a, .nw_twitter_feed_header a:hover{
+color: #2599DB;
+font-weight:bold;
+}
+
+.nw_twitter_feed_header_name{
+color: #333333;
+}
+
+.nw_twitter_tweet{
+background-color: #F0F0F0;
+border-bottom: 1px solid #cccccc;;
+}
+
+.nw_twitter_tweet_text {
+padding: 8px;
+padding-bottom: 0;
+}
+
+.nw_twitter_tweet_links{	
+padding: 8px;
+padding-top: 0;
+}
+
+.nw_twitter_feed_header_image, .nw_twitter_feed_footer td{
+padding: 8px;
+}
+
+.nw_twitter_tweet a, .nw_twitter_tweet a:hover{
+color: #2599DB;
+}
+
+
+
+
+
+
+.ntsa-pdf .Generic{
+width: 100%;
+}
+
+.ntsa-pdf #nw_coverlink_wrapper, .ntsa-pdf #printallDisplayTitle{
+display:none;
+}
+
+
+@media print {
+/* Uncomment to put each article on a separate page when printed 
+#printall .between_article_fragment {
+page-break-before: always;
+}
+*/
+
+#nw_coverlink_wrapper, #printallDisplayTitle{
+display:none;
+}
+
+.Generic#PrintAllPage{
+width: 80%;
+}
+}
+
+#masthead .main_title{
+    text-align: right;
+}
+
+#editableheader img,
+#shadow1 img,
+#shadow2 img,
+#featurearticle .curveCell img,
+#featurearticle2 .curveCell img,
+#sidearticles .curveCell img,
+#placeholder img,
+#masthead .title1 img{
+    display: block;
+}
+
+#nw_masthead_wrapper .nw-componentSpacerMainCell,
+#nw_titlebar_wrapper .nw-componentSpacerMainCell,
+#nw_editableheader_wrapper .nw-componentSpacerMainCell{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#masthead .nw-componentMainCell{
+    padding: 35px 0;
+}
+
+#masthead .title1{
+    font-weight: bold;
+    font-size: 56px;
+    font-family: Arial;
+    color: #009FDA;
+    text-align: right;
+    line-height: 38px;
+}
+
+#masthead .logo{
+    width: 320px;
+}
+
+#nw_editableheader_wrapper .nw-componentSpacerMainCell{
+    padding-bottom: 22px;
+}
+
+#toc .bulletCell,
+#sidearticles .bulletCell{
+    vertical-align: text-top;
+    width: 22px;
+}
+
+#featurearticle .article_wrapper{
+    padding: 0 20px 10px 20px;
+}
+
+#featurearticle2 .article_wrapper{
+    padding: 22px 20px 10px 20px;
+}
+
+#featurearticle2 .nw-componentMainCell{
+    padding-top: 0;
+}
+
+#featurearticle2 .after_section_title_fragment td{
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+#featurearticle2 .section_header{
+    border-bottom: 9px solid #FFFFFF;
+}
+
+#featurearticle2 .section{
+    background-color: #FFFFFF;
+}
+
+.readmore{
+    border-right: 8px solid #E37222;
+    border-left: 8px solid #E37222;
+    border-top: 6px solid #E37222;
+    border-bottom: 6px solid #E37222;
+    background-color: #E37222;
+    color: #FFFFFF;
+}
+
+#articles .between_sections_fragment td,
+#articles2 .between_sections_fragment td{
+    padding-bottom: 30px;
+}
+
+#articles .after_section_title_fragment td,
+#articles2 .after_section_title_fragment td{
+    padding-bottom: 14px;
+}
+
+#nw_articles_wrapper .nw-componentSpacerMainCell{
+    padding-bottom: 25px;
+}
+
+#sidearticles .section_header{
+    padding: 20px 18px 18px 18px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+#sidearticles .section-name{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+#sidearticles .article_wrapper{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#sidearticles .between_sections_fragment td{
+    background-color: #FFFFFF;
+    padding-bottom: 6px;
+}
+
+#sidearticles .divider_line{
+    border-bottom: 1px solid #82D1E3;
+}
+
+#socialnetworks .nw-componentMainCell{
+    text-align: center;
+    padding: 0 0 0 0;
+}
+
+#spacer .nw-componentMainCell{
+    padding: 0 0 0 0;
+}
+
+#nw_spacer_wrapper .nw-componentSpacerMainCell{
+    padding: 0 0 0 0;
+}
+
+#ArticlePage #header, #SectionPage #header{
+    padding-bottom: 20px;
+}
+
+#SectionPage #sectiontoc .section-name a{
+    color: #E97200;
+    font-weight: bold;
+}
+
+#sidearticles .after_article_title_fragment td{
+    padding-bottom: 0;
+}
+
+#shadow1 .nw-componentMainCell, #shadow2 .nw-componentMainCell{
+    background-color: #F1F1F1;
+}
+
+
+
+@media only screen and (max-width: 599px)  { 
+ 
+<PLACE ALL RESPONSIVE CSS HERE> 
+
+#wrapper{
+    padding-top:0 !important;
+}
+ 
+/* Hide before text if not required */
+#before_text{
+    display:none !important;
+}
+
+/* All layout pages are set to 100% width */
+#CoverPage, .ArticlePage, .Generic, .SystemResponsePage, .before_text_wrapper table{
+    width:100% !important;
+}
+
+/* Override for test and review banner */
+#nsta-review-banner-header,
+#ntsa-review-banner-right,
+#ntsa-review-banner-right table td{
+    display:block !important;
+    width: auto !important;
+}
+
+#ntsa-review-banner-right,
+#ntsa-review-banner-right table{
+    max-width: 320px !important;
+    width: 100% !important;
+}
+
+#ntsa-review-banner-right table td image{
+    display:none !important;
+}
+
+.nw_articleGallery_image img{
+    max-width: 100% !important;
+}
+
+/* Ensure that long URLs and words will wrap */
+.Generic .nw-componentSpacerMainCell table,
+.ArticlePage .nw-componentSpacerMainCell table{
+    table-layout:fixed !important;
+}
+
+*{
+    word-wrap:break-word !important;
+    word-wrap:break-all !important;
+}
+ 
+/* Scale user-entered images to max width of the screen */
+.nw_summary_wrapper .summary img, .full-story img{
+    max-width:100% !important;
+    height:inherit !important;
+}
+
+/* Scale tables and iframes (videos) to width of the screen  */
+.nw_summary_wrapper .summary table, .full-story table, #wrapper iframe{
+    width:100% !important;
+    height:inherit !important;
+}
+
+#editableheader img{
+width:100% !important;
+height:inherit !important;
+max-width: 670px !important;
+}
+
+#shadow1 img,
+#shadow2 img{
+    width:100% !important;
+    height:inherit !important;
+    max-width: 710px !important;
+}
+
+#featurearticle .curveCell img,
+#featurearticle2 .curveCell img,
+#placeholder img{
+    width:100% !important;
+    height:inherit !important;
+    max-width: 450px !important;
+}
+
+.logo img{
+width: 100% !important;
+max-width: 243px !important;
+height:inherit !important;
+}
+
+.nw_img_cell img{
+    max-width:100% !important;
+    height:inherit !important;
+}
+ 
+.nw_img_table, .nw_img_wrapper{
+    width:100% !important;
+}
+
+.nw_summary_left{
+    width:100% !important;
+    display:table-footer-group !important;
+}
+  
+.nw_img_right{
+    width:100% !important;
+    display:table-header-group !important;
+}
+
+#CoverPage #left, #ArticlePage #left, #SectionPage #left{
+    width:100% !important;
+    display:table-footer-group !important;
+}
+ 
+#CoverPage #main, #ArticlePage #main, #SectionPage #main{
+    width:100% !important;
+    display:table-header-group !important;
+}
+
+
+#masthead .logo, #masthead .main_title{
+    width:auto !important;
+    display:block !important;
+}
+
+#masthead .title1 img{
+    width:100% !important;
+    max-width:330px !important;
+    height:inherit !important;
+}
+
+#header{
+    padding-bottom: 0 !important;
+}
+
+.nw_img_main_cell{
+    padding: 0 0 10px 0 !important;
+}
+
+#nw_masthead_wrapper .nw-componentSpacerMainCell,
+#nw_titlebar_wrapper .nw-componentSpacerMainCell,
+#nw_editableheader_wrapper .nw-componentSpacerMainCell{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+
+#nw_featurearticle_wrapper .nw-componentSpacerMainCell,
+#nw_articles_wrapper .nw-componentSpacerMainCell,
+#nw_featurearticle2_wrapper .nw-componentSpacerMainCell,
+#nw_articles2_wrapper .nw-componentSpacerMainCell,
+#nw_sidearticles_wrapper .nw-componentSpacerMainCell,
+#nw_placeholder_wrapper .nw-componentSpacerMainCell,
+#nw_articledisplay_wrapper .nw-componentSpacerMainCell,
+#nw_coverlink_wrapper .nw-componentSpacerMainCell{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+#CoverPage #nw_toc_wrapper .nw-componentSpacerMainCell{
+    display: none !important;
+}
+
+#ArchivePage #main,
+#PrintAllPage #main,
+#SendtoaFriendPage #main,
+#SubscribePage #main,
+#SurveyPage #main,
+#UpdateProfilePage #main,
+#SystemResponsePage #main{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+#ArchivePage #nw_coverlink_wrapper .nw-componentSpacerMainCell,
+#PrintAllPage #nw_coverlink_wrapper .nw-componentSpacerMainCell,
+#SendtoaFriendPage #nw_coverlink_wrapper .nw-componentSpacerMainCell,
+#SubscribePage #nw_coverlink_wrapper .nw-componentSpacerMainCell,
+#SurveyPage #nw_coverlink_wrapper .nw-componentSpacerMainCell,
+#UpdateProfilePage #nw_coverlink_wrapper .nw-componentSpacerMainCell,
+#SystemResponsePage #nw_coverlink_wrapper .nw-componentSpacerMainCell{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#SectionPage #sectiontoc .nw-componentMainCell,
+#ArticlePage #toc .nw-componentMainCell{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+#ArticlePage #header,
+#SectionPage #header{
+    padding-bottom: 10px !important;
+}
+
+
+
+}

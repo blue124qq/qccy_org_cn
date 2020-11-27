@@ -1,0 +1,449 @@
+/*/ LP FLEX Marketo Forms Stylesheet /*/
+/**************************************/
+/* GLOBAL - Form Presets: Form element & children */
+form.mktoForm, form.mktoForm * {
+    font-size: 1em !important;
+    font-family: inherit !important;
+    color: inherit !important;
+}
+
+/* :::::::::::::::::::::::::::::::::: */
+/* :::::[ Architectural Styles ]::::: */
+/* :::::::::::::::::::::::::::::::::: */
+form.mktoForm {
+    flex-direction: column; /* choose row for horizontal display */
+    width: 100% !important; /* override fixed width on mktoForm */
+}
+
+form.mktoForm * {
+    float: none !important; /* remove float on mktoForm elements */
+    width: auto !important; /* remove fixed width on mktoForm elements */
+}
+
+form.mktoForm, form.mktoForm .mktoFormRow, form.mktoForm .mktoFieldWrap, form.mktoForm .mktoButtonRow {
+    display: flex !important; /* Flex these elements */
+}
+
+form.mktoForm .mktoOffset, form.mktoForm .mktoGutter, form.mktoForm fieldset legend, form.mktoForm .mktoAsterix {
+    display: none !important; /* Hide these elements */
+}
+
+form.mktoForm .mktoFormCol, form.mktoForm .mktoHtmlText {
+    flex-grow: 1; /* Make these elements flex to full-width (100%) */
+}
+
+/* Maintain font-size, line-height and input height for mobile */
+form.mktoForm .mktoField {
+    line-height: 1.4em !important; /*mktoOverride*/
+    font-size: 1em !important; /*mktoOverride*/
+    height: initial !important; /*mktoOverride*/
+}
+
+/* :::::::::::::::::::::::::::::::: */
+/* :::::[ Form Layout Styles ]::::: */
+/* :::::::::::::::::::::::::::::::: */
+
+/* Form Layout > Settings: LABELS-ABOVE ---------------- */
+form.mktoForm.mktoLayoutAbove .mktoFieldWrap {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+form.mktoForm.mktoLayoutAbove label.mktoLabel {
+    text-align: left !important;
+    padding: .5em 0 !important;
+    width: 100% !important;
+}
+
+/* Form Layout > Settings: LABELS-LEFT ------------------ */
+form.mktoForm.mktoLayoutLeft fieldset .mktoFieldWrap {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+form.mktoForm.mktoLayoutLeft fieldset label.mktoLabel {
+    display: block !important;
+    text-align: right !important;
+    padding: 0 !important;
+    max-width: 120px; /* set width for labels */
+    width: 120px !important; /* set width for labels */
+    margin: auto 15px auto 0;
+}
+
+/* TRANSITIONS: ease color changes */
+/**/
+form.mktoForm * {
+    /**/
+    transition: ease color .3s !important;
+    /**/
+    transition: ease background-color .3s !important;
+    /**/
+}
+
+
+/* ::::::::::::::::::::::::::: */
+/* :::::[ Form Elements ]::::: */
+/* ::::::::::::::::::::::::::: */
+
+/* ROWS ___________________ */
+form.mktoForm .mktoFormRow,
+form.mktoForm .mktoButtonRow {
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-width: unset;
+}
+
+form.mktoForm .mktoFormRow {
+    margin: 0 -10px; /* offset .mktoFieldWrap padding (10px) */
+}
+
+/* COLUMNS ______________ */
+form.mktoForm .mktoFormCol {
+    flex-basis: 0; /* Make columns in a row equal widths */
+    min-height: 0px !important; /*mktoOverride*/
+}
+
+/* FIELDSET _________ */
+form.mktoForm fieldset {
+    padding: 0px !important; /*mktoOverride*/
+    margin: 0px !important; /*mktoOverride*/
+    border: 0px !important; /*mktoOverride*/
+}
+
+/* FIELDWRAP ______________ */
+form.mktoForm .mktoFieldWrap {
+    padding: 0px 10px !important;
+}
+
+/* LABELS __________________ */
+form.mktoForm label.mktoLabel {
+    padding: .5rem !important;
+    font-size: 1.1em !important;
+    font-weight: bold !important;
+}
+
+/* |>> Labels-Above ........................ */
+form.mktoForm.mktoLayoutAbove label.mktoLabel {
+    text-align: left !important;
+}
+
+/* |>> Labels-Left ........................ */
+form.mktoForm.mktoLayoutLeft label.mktoLabel {
+    text-align: right !important;
+    min-width: 120px;
+}
+
+/* INPUTS (ALL) ______________ */
+/* excludes radio & checkboxes */
+form.mktoForm input[type=url],
+form.mktoForm input[type=text],
+form.mktoForm input[type=date],
+form.mktoForm input[type=tel],
+form.mktoForm input[type=email],
+form.mktoForm input[type=number],
+form.mktoForm textarea.mktoField,
+form.mktoForm select.mktoField {
+    color: #414042 !important;
+    padding: 8px 13px !important;
+    flex-grow: 1;
+    width: 100% !important;
+    min-height: 44px !important; /*mktoOverride*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff !important;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: #999 !important;
+    box-shadow: none !important;
+}
+
+/* SELECT ___________________ */
+form.mktoForm select.mktoField {
+    background-image: linear-gradient(135deg, #999 50%, transparent 50%), linear-gradient(45deg, transparent 50%, #999 50%); /* downward triangle - match placeholder color */
+    background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat !important;
+    outline: 0 !important;
+}
+
+/* |>> Select not-valid states ............. */
+form.mktoForm select.mktoField:not(.mktoValid),
+form.mktoForm select.mktoField.mktoInvalid {
+    color: #999 !important;
+}
+
+/* |>> Select invalid states .................. */
+form.mktoForm select.mktoField.mktoInvalid:active,
+form.mktoForm select.mktoField.mktoInvalid:focus {
+    color: initial !important;
+}
+
+/* |>> Select active states ........ */
+form.mktoForm select.mktoField:focus,
+form.mktoForm select.mktoField:active {
+    background-image: linear-gradient(135deg, #008AD8 50%, transparent 50%), linear-gradient(45deg, transparent 50%, #008AD8 50%); /* downard triangle - :focus-color */
+}
+
+/* LOGICAL FIELDS (parent) ___ */
+form.mktoForm .mktoRadioList,
+form.mktoForm .mktoCheckboxList {
+    flex-grow: 1;
+    padding: 0.5rem 0 !important;
+}
+
+/* LOGICAL FIELDS (child) ______ */
+form.mktoForm .mktoRadioList *,
+form.mktoForm .mktoCheckboxList * {
+    text-align: left !important;
+}
+
+/* |>> Checkbox & Radio Labels .... */
+form.mktoForm .mktoCheckboxList label,
+form.mktoForm .mktoRadioList label {
+    margin-top: 0px !important;
+    line-height: 1.25em !important;
+    margin-bottom: .75em !important;
+    margin-left: 1.75em !important;
+}
+
+/* |>> Checkbox & Radio Inputs ....... */
+form.mktoForm .mktoRadioList > input,
+form.mktoForm .mktoCheckboxList > input {
+    float: left !important;
+    width: 1.25em !important;
+    height: 1.25em !important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #999 !important;
+    background-color: #fff;
+}
+
+
+/* CHECKBOX _____________________ */
+form.mktoForm input[type=checkbox] {
+    -webkit-appearance: none !important;
+    box-sizing: border-box !important;
+}
+
+/* |>> Checkbox :focus state .......... */
+form.mktoForm input[type=checkbox]:focus {
+    outline: 0px !important;
+    border-color: #1a1c1b !important;
+}
+
+/* |>> Checkbox :checked state .................. */
+form.mktoForm input[type=checkbox]:checked::before {
+    color: #414042 !important;
+    content: "\2713";
+    font-weight: bold !important;
+    width: 1em !important;
+    height: 1em !important;
+    text-align: center !important;
+    display: block !important;
+    margin-top: -2px;
+    margin-left: 1px;
+}
+
+/* RADIO _______________________________ */
+form.mktoForm input.mktoField[type=radio] {
+    -webkit-appearance: none !important;
+    border-radius: 50%;
+    height: 18px !important;
+    width: 18px !important;
+    position: relative;
+}
+
+/* |>> Radio :focus state .................... */
+form.mktoForm input.mktoField[type=radio]:focus:checked,
+form.mktoForm input.mktoField[type=radio]:focus {
+    border-color: #008AD8 !important;
+    outline: none !important;
+    border-width: 1px;
+    border-style: solid;
+}
+
+/* |>> Radio :checked state ......................... */
+form.mktoForm input.mktoField[type=radio]:checked::before {
+    content: "";
+    background-color: #414042 !important;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+/* TEXTAREA ___________________ */
+form.mktoForm textarea.mktoField {
+    height: auto !important; /* override input fixed height */
+}
+
+/* INPUTS (ALL) :focus state ________ */
+form.mktoForm input[type=text].mktoField:focus,
+form.mktoForm input[type=email].mktoField:focus,
+form.mktoForm input[type=tel].mktoField:focus,
+form.mktoForm input[type=number].mktoField:focus,
+form.mktoForm input[type=currency].mktoField:focus,
+form.mktoForm input[type=date].mktoField:focus,
+form.mktoForm input[type=url].mktoField:focus,
+form.mktoForm select.mktoField:focus,
+form.mktoForm textarea.mktoField:focus {
+    border-bottom-width: 3px;
+    border-color: #1a1c1b !important;
+    outline: none;
+}
+
+
+/* FORM BUTTON _____________ */
+/* |>> Button wrapper ...... */
+form.mktoForm .mktoButtonWrap {
+    margin: 20px auto !important; /* center button */
+}
+
+/* |>> Button style .......... */
+form.mktoForm button.mktoButton {
+    color: #fff !important;
+    background: #008AD8 !important;
+    border: 1px solid #008AD8 !important;
+    padding: .75rem 1.5rem !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    font-weight: normal !important;
+    border-radius: 0;
+    min-width: 180px;
+}
+
+/* |>> Button :active states .. */
+form.mktoForm .mktoButton:hover,
+form.mktoForm .mktoButton:focus,
+form.mktoForm .mktoButton:active {
+    outline: none !important;
+    color: #fff !important;
+    background: #0072b4 !important;
+    border-color: #0072b4 !important;
+}
+
+form.mktoForm .mktoButton:focus {
+    box-shadow: 0 0 0 .2rem rgba(0, 138, 216, 0.5);
+}
+
+
+/* RICH TEXT _____________ */
+form.mktoForm .mktoHtmlText {
+    padding: 0px !important;
+    width: 100% !important;
+}
+
+/* PLACEHOLDERS ________________________ */
+::-moz-placeholder {
+    color: #999 !important;
+}
+
+::-webkit-input-placeholder {
+    color: #999 !important;
+}
+
+:-ms-input-placeholder {
+    color: #999 !important;
+}
+
+::placeholder {
+    color: #999 !important;
+}
+
+/* ERROR MESSAGE _________________________ */
+form.mktoForm input.mktoField.mktoInvalid,
+form.mktoForm select.mktoField.mktoInvalid,
+form.mktoForm textarea.mktoField.mktoInvalid,
+.mktoLogicalField.mktoInvalid input {
+    border-color: #dd0000 !important;
+}
+
+form.mktoForm select.mktoField.mktoInvalid {
+    background-image: linear-gradient(135deg, #dd0000 50%, transparent 50%), linear-gradient(45deg, transparent 50%, #dd0000 50%); /* downward triangle - error-red */
+}
+
+form.mktoForm .mktoError {
+    width: 100% !important;
+    left: 5%;
+    bottom: 30px !important;
+    display: flex;
+    max-width: 90% !important;
+}
+
+form.mktoForm .mktoErrorMsg {
+    max-width: 90% !important;
+    flex-grow: 1 !important;
+    margin: 0px auto !important;
+    width: 100% !important;
+    font-size: .9em !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background: #fff !important;
+    color: red !important;
+    border-bottom: 1px solid #dd0000 !important;
+    outline: none !important;
+}
+
+form.mktoForm .mktoErrorDetail {
+    font-size: inherit !important;
+    display: inline-block !important;
+}
+
+/*/ ======== RESPONSIVE STYLES ========= /*/
+/* adjust breakpoint to max-width: [480, 576, 768, 991, 1200] */
+/* twin styles: upto 576px, 768-991px || 1-column responsive */
+/* be sure both media queries match identically */
+@media screen and (max-width: 576px) {
+    form.mktoForm,
+    form.mktoForm .mktoFormRow,
+    form.mktoForm .mktoFieldWrap {
+        display: block !important;
+        text-align: left !important;
+    }
+
+    form.mktoForm, form.mktoForm * {
+        padding: 0px;
+    }
+
+    form.mktoForm label.mktoLabel, form.mktoForm .mktoHtmlText {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+/* end responsive 0-576px */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    form.mktoForm,
+    form.mktoForm .mktoFormRow,
+    form.mktoForm .mktoFieldWrap {
+        display: block !important;
+        text-align: left !important;
+    }
+
+    form.mktoForm, form.mktoForm * {
+        padding: 0px;
+    }
+
+    form.mktoForm label.mktoLabel, form.mktoForm .mktoHtmlText {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+/* end responsive 768-991px */
+
+a.btn.disabled, fieldset:disabled a.btn {
+    pointer-events: none;
+}
+
+#top .input-text, #top input[type="text"], #top input[type="input"], #top input[type="password"], #top input[type="email"], #top input[type="number"], #top input[type="url"], #top input[type="tel"], #top input[type="search"], #top textarea, #top select {
+    margin-bottom: 0px !important;
+}
